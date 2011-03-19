@@ -1,0 +1,30 @@
+# Arrow keys in keypad mode
+#
+"\M-OD":        backward-char
+"\M-OC":        forward-char
+"\M-OA":        history-search-backward
+"\M-OB":        history-search-forward
+#
+# Arrow keys in ANSI mode
+#
+"\M-[D":        backward-char
+"\M-[C":        forward-char
+"\e[A":	history-search-backward 
+"\e[B":        history-search-forward
+#
+# Arrow keys in 8 bit keypad mode
+#
+#"\M-\C-OD":       backward-char
+#"\M-\C-OC":       forward-char
+#"\M-\C-OA":       previous-history
+#"\M-\C-OB":       next-history
+#
+# Arrow keys in 8 bit ANSI mode
+#
+#"\M-\C-[D":       backward-char
+#"\M-\C-[C":       forward-char
+#"\M-\C-[A":       previous-history
+#"\M-\C-[B":       next-history
+"\C-i":menu-complete
+set completion-ignore-case on
+set show-all-if-amibiguous on

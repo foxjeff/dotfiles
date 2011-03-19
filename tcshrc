@@ -1,0 +1,98 @@
+#
+#setenv CVSROOT /usr/local/cvsroot
+setenv WWW_HOME http://duckduckgo.com
+setenv CVS_RSH ssh
+setenv JAVA_HOME /System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/
+setenv JRUBY_HOME /Users/jeff/Projects/jruby/
+setenv MANPATH /usr/share/man:/usr/local/share/man:/opt/local/share/man
+setenv INFOPATH /usr/share/info:/usr/local/share/info:/opt/local/share/info
+setenv POOPAGER "col -b | view -c 'set ft=man nomod nolist' -"
+setenv EDITOR /usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim
+#setenv VIM_APP_DIR /Applications/vim70/
+setenv LSCOLORS "cxfxexdxbxegedabagacad"
+#grep
+setenv GREP_COLOR '1;36'
+#setenv GREP_OPTIONS '-iHR -m1 --color=auto  '
+setenv work ~/work
+setenv rails ~/work/rails/
+setenv repos /var/svn/repos/
+setenv src ~/work/src/
+setenv sites ~/Sites/
+setenv NODE_PATH "/usr/local/lib/node"
+#
+if ($?USER == 0 || $?prompt == 0) exit
+#
+set complete = enhance
+set autolist
+#
+#source ~/.rake_tasks
+complete cd  	p/1/d/		# Directories only
+complete chdir 	p/1/d/
+complete pushd 	p/1/d/
+complete popd 	p/1/d/
+complete pu 	p/1/d/
+complete po 	p/1/d/
+complete set	'c/*=/f/' 'p/1/s/=' 'n/=/f/'
+complete unset	'n/*/s/'
+complete alias 	p/1/a/		# only aliases are valid
+complete unalias	'n/*/a/'
+complete {fg,bg,stop}	c/%/j/ p/1/"(%)"//
+complete setenv	'p/1/e/' 'c/*:/f/'
+#
+set ignoreeof
+#set autocorrect
+set autoexpand
+set complete=enhance
+#set correct=all
+#
+#set path = (/opt/local/library/mysql5/bin /opt/local/bin /usr/local/bin /usr/local/sbin /usr/local/mysql/bin $JAVA_HOME/bin $JRUBY_HOME/bin ${path})
+set orig_path = (${path})
+set path= ( /usr/local/Cellar/ruby/1.9.2-p136/bin /usr/local/bin /usr/local/git/bin ${path} )
+set term = xterm-256color
+#set prompt = '[%~] %# ' #simple prompt
+#set prompt = '\n>>> [%~] (%B%d%b, %D %w @%p) ~%n \n%# '
+#set prompt = '\n%{\033[1;31m%}>>> [%~] (%{\033[34m%}%d, %D %w %{\033[0m%}@%p%{\033[1;31m%}) %{\033[0m%}~%n \n%{\033[0m%}%# '
+#set prompt = '\n%{\033[4;1;32m%}>>> [%~]%{\033[0;34m%} (%d, %D %w %{\033[0m%}@%p%{\033[1;34m%}) %{\033[0m%}~%n \n%{\033[0m\e\k\e\\%}%# '
+set prompt = '\n%{\e[4;1;32m%}>>> [%~]%{\e[0;34m%} (%d, %D %w %{\e[0m%}@%p%{\e[1;34m%}) %{\e[0m%}~%n \n%{\e[0m%}%# '
+#
+set histdup = 'erase'
+set history = 2048
+set savehist = (2048 merge)
+alias vim '/usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim '
+alias view 'vim -R'
+alias vman 'man -P "$POOPAGER"'
+alias w3mb 'w3m ~/Documents/NewBookmarks.html'
+alias vi vim
+alias ls ls -Gp
+#alias less ~/less.sh
+alias less 'less -r'
+alias more 'more -reg'
+alias lsl ls -altrp
+alias lotr 'ls -lotrph'
+alias vless /usr/share/vim/vim62/macros/less.sh
+alias pman 'man -t \!* | open -f -a Preview'
+alias grepi 'grep -iHR -m1 --color=auto  '
+#
+alias topo 'top -o vsize -O pid'
+alias rm 	'rm -i'
+alias cp 	'cp -i'
+alias mv 	'mv -i'
+alias ss '/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine &'
+#alias spec '/usr/local/lib/ruby/gems/1.8/gems/rspec-0.8.0/bin/spec'
+#source completions
+#
+bindkey [A history-search-backward
+bindkey [B history-search-forward
+bindkey "^I" complete-word-fwd
+bindkey "^W" backward-delete-word
+#
+set hstring = '"Hi there!"'
+set vstring = '"Zarvox"'
+alias hi "osascript -e 'say $hstring using $vstring'"
+#
+umask 0002
+#irb-history-server -d
+#source /sw/bin/init.csh
+#ln -s /opt/local/var/run/mysql5/mysqld.sock /tmp/mysql.sock
+
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.

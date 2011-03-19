@@ -1,0 +1,2 @@
+bind "^P" ed-search-prev-history
+bind "^N" ed-search-next-history
