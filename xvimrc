@@ -1,0 +1,7 @@
+nmap ] :xhelp<cr>
+map <Space> <C-d>
+imap jj <ESC>
+imap uu <ESC>u
+set ignorecase
+set incsearch
+
