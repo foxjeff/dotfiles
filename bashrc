@@ -24,6 +24,7 @@ ulimit -c unlimited
 #alias ls='ls -Gp'
 #alias lotr='ls -lotrh'
 
+#some colors for ls
 export LSCOLORS="cxfxexdxbxegedabagacad"
 
 
