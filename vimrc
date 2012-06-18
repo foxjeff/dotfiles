@@ -9,9 +9,10 @@ syntax enable
 set nocompatible
 set viminfo=!,'100,<50,s10,h,n~/Dropbox/dotfiles-mbp/.viminfo
 set vb "visual bell to get rid of annoying noises
-"set cursorline
+set cursorline
 set wildignore=*.0,*.class,#*,*~
 set dir=/tmp
+"set backupdir=/tmp
 set laststatus=2
 set ruler
 "set syntax=help
@@ -26,8 +27,12 @@ set backspace=2
 set t_Co=256
 "set t_kD=
 set hls
+"let g:solarized_termcolors=256
+"let g:solarized_contrast="low"
+"let g:solarized_style="dark"
+"colorscheme solarized
+set background=dark
 colorscheme xoria256
-"set background=dark
 "
 set autoindent
 set smartindent
@@ -39,10 +44,12 @@ set shiftwidth=2
 set tabstop=2
 set pastetoggle=<F4>
 set hidden
-
+"makes v copy to clipboard
+set clipboard+=autoselect
 "ConqueTerm
 let g:ConqueTerm_CWInsert = 1
 
+let loaded_matchit = 1
 "yankring
 let g:yankring_history_dir = '~/.vim/'
 let g:yankring_history_file = '.yankring_history'
@@ -62,8 +69,15 @@ let g:paredit_shortmaps=1
 let g:CommandTMaxHeight = 10
 nmap <F6> :CommandT<cr>
 
+"line numbering toggle from:
+"http://superuser.com/questions/339593/vim-toggle-number-with-relativenumber
+noremap <silent><F7> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
+
 "vim-coffee-script
 let g:coffee_compile_on_save = 1
+
+"Preview
+let g:PreviewBrowsers='open -g -a Safari'
 
 cnoremap <C-A> <HOME>
 cno \h ~/
@@ -121,7 +135,15 @@ runtime ftplugin/man.vim
 set statusline=%<%f\ %m\ %y\ %r\ \ %=%l\ of\ %L,%c%V\ %p%%
 
 "highlight stuff
-hi CursorLine cterm=none
+hi CursorLine cterm=none ctermbg=234
+hi Visual ctermfg=black ctermbg=white
+hi StatusLine  cterm=bold ctermbg=239
+hi StatusLineNC  ctermbg=235
+hi StatusLineModified cterm=reverse ctermfg=1
+hi StatusLineSpecial ctermfg=4 cterm=reverse
+hi StatusLineSpecialNC ctermbg=236
+hi MatchParen ctermfg=green ctermbg=none
+
 "hi Search ctermfg=7 ctermbg=8
 "hi WildMenu ctermbg=none
 "hi Visual ctermfg=8 ctermbg=7
@@ -135,6 +157,10 @@ hi CursorLine cterm=none
 "au WinLeave * set nocursorline
 "autocmd BufEnter * :syntax sync fromstart
 "
+"But these work
+au InsertEnter * setlocal nocursorline
+au InsertLeave * setlocal cursorline
+
 "not sure about this: 
 "function! Ruby_eval_vsplit() range
   "let src = tempname()

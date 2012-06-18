@@ -1,2 +1,5 @@
+edit on
+bind ^R em-inc-search-prev
+bind ^S em-inc-search-next
 bind "^P" ed-search-prev-history
 bind "^N" ed-search-next-history

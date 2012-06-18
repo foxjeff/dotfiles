@@ -9,8 +9,8 @@
 #
 "\M-[D":        backward-char
 "\M-[C":        forward-char
-"\e[A":	history-search-backward 
-"\e[B":        history-search-forward
+"\e[A":					history-search-backward 
+"\e[B":					history-search-forward
 #
 # Arrow keys in 8 bit keypad mode
 #
@@ -26,5 +26,9 @@
 #"\M-\C-[A":       previous-history
 #"\M-\C-[B":       next-history
 "\C-i":menu-complete
+set bell-style none
 set completion-ignore-case on
-set show-all-if-amibiguous on
+set history-preserve-point off
+set horizontal-scroll-mode off
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
