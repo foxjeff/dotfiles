@@ -8,31 +8,49 @@ fi
 if [ -f ~/.aliases ]; then
 	source ~/.aliases
 fi
-# Get the aliases and functions
-#if [ -f ~/.bash_profile ]; then
-#	. ~/.bash_profile
-#fi
+
+#history append and other options
+shopt -s histappend
+export HISTFILESIZE=10000
+export HISTSIZE=8000
+export HISTCONTROL=erasedups
+export CDPATH='.:~:~/Dropbox:/usr/local'
 
 ulimit -c unlimited
 
-alias less='less -r'
-alias view='vim -R'
-alias ls='ls -Gp'
-alias lotr='ls -lotrh'
-
-#export VIM_APP_DIR='/Applications/vim70/'
+#alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+#alias less='less -r'
+#alias view='vim -R'
+#alias ls='ls -Gp'
+#alias lotr='ls -lotrh'
 
 export LSCOLORS="cxfxexdxbxegedabagacad"
-#export PS1='@\t:\w\$ '
-export PS1='[\W] \$ '
-#PS1='\e]2;\u@\h:\w\a\e[1;31m>>> [\w] (\e[34m\D{%a, %d %b}\e[0m \D{%l:%M:%S %p}\e[1;31m)\e[0m ~\u@\h \n\ek\$ '
 
-export PATH=/usr/local/bin:/usr/local/git/bin:$HOME/bin:$JAVA_HOME/bin:$PATH
+
+#if [[ ("$TERM_PROGRAM" == "Apple_Terminal" || "$TERM_PROGRAM" == "iTerm.app") && (-z "$INSIDE_EMACS") ]]; then
+    #update_terminal_cwd() {
+        ## Identify the directory using a "file:" scheme URL,
+        ## including the host name to disambiguate local vs.
+        ## remote connections. Percent-escape spaces.
+	#local SEARCH=' '
+	#local REPLACE='%20'
+	#local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
+	#printf '\e]7;%s\a' "$PWD_URL"
+    #}
+    #PROMPT_COMMAND="update_terminal_cwd; $PROMPT_COMMAND"
+#fi
+#export PS1='@\t:\w\$ '
+#export PS1='[\W] \$ '
+#Prompt help: https://wiki.archlinux.org/index.php/Color_Bash_Prompt
+PS11='\[\e[1;31m\]>>> [\w] (\[\e[1;34m\]\D{%a, %d %b}\[\e[0m\] \D{%l:%M:%S %p}\[\e[1;31m\])\[\e[0m\] \[\e[1;32m\]\u@\H (\j)\[\e[0m\] \n\$ '
+export PS1='\[\e[1;34m\]\W \[\e[1;35m\](\j)➙ \[\e[0m\]'
+
+export PATH=/usr/local/bin:/usr/local/git/bin:$PATH
+export NODE_PATH='/usr/local/lib/node_modules' #for couchapp and other node modules
 
 bind -f ~/.inputrc
 
-export TERM="xterm" #-256color"
+export TERM="xterm-256color"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 # vim:ts=4:sw=4

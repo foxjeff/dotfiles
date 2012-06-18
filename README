@@ -2,9 +2,12 @@ my dotfiles
 
 .vimrc
 .gvimrc
+.xvimrc
 
+.zshrc
 .tcshrc
 .bashrc
+.bash_profile
 .inputrc
 .editrc
-
+.aliases
