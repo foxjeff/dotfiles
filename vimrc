@@ -49,7 +49,7 @@ set clipboard+=autoselect
 "ConqueTerm
 let g:ConqueTerm_CWInsert = 1
 
-let loaded_matchit = 1
+"let loaded_matchit = 1
 "yankring
 let g:yankring_history_dir = '~/.vim/'
 let g:yankring_history_file = '.yankring_history'
@@ -138,7 +138,7 @@ set statusline=%<%f\ %m\ %y\ %r\ \ %=%l\ of\ %L,%c%V\ %p%%
 hi CursorLine cterm=none ctermbg=234
 hi Visual ctermfg=black ctermbg=white
 hi StatusLine  cterm=bold ctermbg=239
-hi StatusLineNC  ctermbg=235
+hi StatusLineNC  ctermfg=gray ctermbg=236
 hi StatusLineModified cterm=reverse ctermfg=1
 hi StatusLineSpecial ctermfg=4 cterm=reverse
 hi StatusLineSpecialNC ctermbg=236
