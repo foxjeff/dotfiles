@@ -15,6 +15,8 @@ export HISTFILESIZE=10000
 export HISTSIZE=8000
 export HISTCONTROL=erasedups
 export CDPATH='.:~:~/Dropbox:/usr/local'
+#for glances:
+export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
 
 ulimit -c unlimited
 

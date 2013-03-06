@@ -1,0 +1,35 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("gls"
+ (filename . "~/Dropbox/work/org-mode/emacs-todo.org")
+ (front-context-string . "\n** [[http://git")
+ (rear-context-string . "e=iso -alGgphtu'")
+ (position . 3557))
+("emacs-todo"
+ (filename . "~/Dropbox/work/org-mode/emacs-todo.org")
+ (front-context-string . "* init file thin")
+ (rear-context-string . "tartup: indent\n\n")
+ (position . 20))
+("notes.org"
+ (filename . "~/Dropbox/work/org-mode/notes.org")
+ (front-context-string . "#+Startup: inden")
+ (rear-context-string)
+ (position . 1))
+("custom.el"
+ (filename . "~/.emacs.d/custom.el")
+ (front-context-string . "(custom-set-vari")
+ (rear-context-string)
+ (position . 1))
+("init.el"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . ";; init.el\n;;\n\n(")
+ (rear-context-string)
+ (position . 1))
+("org-refile-last-stored"
+ (filename . "~/Dropbox/work/org-mode/emacs-todo.org")
+ (front-context-string . "** system change")
+ (rear-context-string . "n(@2..@5);%.1f\n\n")
+ (position . 873))
+)

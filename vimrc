@@ -27,12 +27,23 @@ set backspace=2
 set t_Co=256
 "set t_kD=
 set hls
-"let g:solarized_termcolors=256
-"let g:solarized_contrast="low"
-"let g:solarized_style="dark"
-"colorscheme solarized
+"timeoutlen is how long pressing <ESC> delays; default is 1000ms
+set timeoutlen=500
+
+"colorscheme stuff
+"let g:solarized_termcolors=256 "    |   16
+"let g:solarized_termtrans =   0       |   1
+"let g:solarized_degrade   =   0       |   1
+"let g:solarized_bold      =   1       |   0
+"let g:solarized_underline =   1       |   0
+"let g:solarized_italic    =   1       |   0
+"let g:solarized_style     ="dark" " |   light
+"let g:solarized_contrast="high" "or low
 set background=dark
-colorscheme xoria256
+let g:liquidcarbon_high_contrast=5
+colorscheme liquidcarbon
+"colorscheme solarized
+"colorscheme xoria256
 "
 set autoindent
 set smartindent
@@ -47,7 +58,7 @@ set hidden
 "makes v copy to clipboard
 set clipboard+=autoselect
 "ConqueTerm
-let g:ConqueTerm_CWInsert = 1
+"let g:ConqueTerm_CWInsert = 1
 
 "let loaded_matchit = 1
 "yankring
@@ -62,8 +73,8 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 let g:miniBufExplSplitBelow = 1
 
-"paredit
-let g:paredit_shortmaps=1
+"paredit - no shortmaps, changes J and O among other things
+let g:paredit_shortmaps=0
 
 "command-t stuff
 let g:CommandTMaxHeight = 10
@@ -72,6 +83,9 @@ nmap <F6> :CommandT<cr>
 "line numbering toggle from:
 "http://superuser.com/questions/339593/vim-toggle-number-with-relativenumber
 noremap <silent><F7> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
+
+"for vimclojure
+let g:vimclojure#WantNailgun=1
 
 "vim-coffee-script
 let g:coffee_compile_on_save = 1
@@ -115,6 +129,11 @@ imap <leader>ww <esc>:w<cr>
 nmap <SPACE> <PAGEDOWN>
 nmap <C-J> <C-W>j
 nmap <C-K> <C-W>k
+nmap <TAB> <C-W>w
+nmap j gj
+nmap k gk
+nmap t o<ESC>k 
+nmap T O<ESC>j 
 "
 map <silent> <leader>f :WinFullScreen<cr>
 
@@ -135,14 +154,18 @@ runtime ftplugin/man.vim
 set statusline=%<%f\ %m\ %y\ %r\ \ %=%l\ of\ %L,%c%V\ %p%%
 
 "highlight stuff
-hi CursorLine cterm=none ctermbg=234
-hi Visual ctermfg=black ctermbg=white
-hi StatusLine  cterm=bold ctermbg=239
-hi StatusLineNC  ctermfg=gray ctermbg=236
-hi StatusLineModified cterm=reverse ctermfg=1
-hi StatusLineSpecial ctermfg=4 cterm=reverse
-hi StatusLineSpecialNC ctermbg=236
-hi MatchParen ctermfg=green ctermbg=none
+"hi CursorLine cterm=none ctermbg=234
+"hi Visual ctermfg=black ctermbg=white
+"hi StatusLine  cterm=bold ctermfg=White ctermbg=235 "was 239
+"hi StatusLineNC cterm=none ctermfg=244 ctermbg=235
+"
+"hi StatusLineModified term=bold,reverse cterm=bold,reverse ctermfg=White 
+"gui=bold,reverse guifg=DarkRed
+"
+"hi StatusLineSpecial term=bold,reverse cterm=bold,reverse ctermfg=4 ctermbg=15 
+"gui=bold,reverse guifg=DarkBlue
+"hi StatusLineSpecialNC ctermbg=236
+"hi MatchParen ctermfg=green ctermbg=none
 
 "hi Search ctermfg=7 ctermbg=8
 "hi WildMenu ctermbg=none
@@ -153,13 +176,15 @@ hi MatchParen ctermfg=green ctermbg=none
 "hi ModeMsg ctermfg=5 cterm=reverse
 
 "these au's don't really work for me anymore: Fri Feb 18 18:38:36 CST 2011
-"au WinEnter * set cursorline
-"au WinLeave * set nocursorline
+"seem to be working now Fri Jul  6 16:25:46 CDT 2012
+au WinEnter * set cursorline
+au WinLeave * set nocursorline
 "autocmd BufEnter * :syntax sync fromstart
 "
 "But these work
 au InsertEnter * setlocal nocursorline
 au InsertLeave * setlocal cursorline
+au InsertLeave * set nopaste
 
 "not sure about this: 
 "function! Ruby_eval_vsplit() range

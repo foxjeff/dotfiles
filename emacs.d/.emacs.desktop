@@ -1,0 +1,62 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Feb 10 23:23:18 2011
+;; Desktop file format version 206
+;; Emacs version 23.2.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("pulse" "iswitch" "leader" "rss" "browser" "reader" "rss" "key" "switch" "my-sc" "defun" "prefix" "co" "completion" "glob" "top" "images" "home" "option" "home"))
+(setq regexp-search-ring nil)
+(setq register-alist (list (desktop-list* 25 (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk 313 (get-buffer "*scratch*")))) mk)) (desktop-list* 97 (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk 242 (get-buffer "*scratch*")))) mk))))
+(setq file-name-history '("~/.emacs.d/" "~/.emacs" "~/.tcshrc" "~/.w3m/download" "~/.bash_profile" "~/.bashrc" "~/.emacs" "~/*scratch*" "~/.emacs" "~/icicles/ring+.el" "~/icicles/doremi.el" "~/.emacs" "~/.emacs.d/icicles-install.el" "~/.emacs" "~/foo.org" "~/.emacs"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  nil
+  "*info*"
+  'Info-mode
+  nil
+  193643
+  '(194917 nil)
+  t
+  '("/Applications/Emacs.app/Contents/Resources/info/emacs" "Saving Emacs Sessions")
+  '((tab-width . 8) (buffer-file-coding-system . utf-8-unix) (case-fold-search . t)))
+
+(desktop-create-buffer 206
+  "/Users/anand/*scratch*"
+  "*scratch*"
+  'lisp-interaction-mode
+  nil
+  461
+  '(374 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/anand/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  nil
+  637
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/usr/local/share/emacs/site-lisp/w3m/w3m.el"
+  "w3m.el"
+  'emacs-lisp-mode
+  nil
+  113138
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . iso-2022-7bit-unix)))
+

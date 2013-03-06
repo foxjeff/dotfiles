@@ -1,14 +1,14 @@
 # Arrow keys in keypad mode
 #
-"\M-OD":        backward-char
-"\M-OC":        forward-char
-"\M-OA":        history-search-backward
-"\M-OB":        history-search-forward
+#"\M-OD":        backward-char
+#"\M-OC":        forward-char
+#"\M-OA":        history-search-backward
+#"\M-OB":        history-search-forward
 #
 # Arrow keys in ANSI mode
 #
-"\M-[D":        backward-char
-"\M-[C":        forward-char
+#"\M-[D":        backward-char
+#"\M-[C":        forward-char
 "\e[A":					history-search-backward 
 "\e[B":					history-search-forward
 #
@@ -25,7 +25,14 @@
 #"\M-\C-[C":       forward-char
 #"\M-\C-[A":       previous-history
 #"\M-\C-[B":       next-history
-"\C-i":menu-complete
+
+"\C-n": history-search-forward
+"\C-p": history-search-backward
+#tab: complete
+set blink-matching-paren on
+#"\C-i":menu-complete
+tab:menu-complete
+set mark-symlinked-directories on
 set bell-style none
 set completion-ignore-case on
 set history-preserve-point off

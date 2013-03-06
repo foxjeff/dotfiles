@@ -1,0 +1,6 @@
+ls
+brew
+path
+echo $path
+echo $PATH
+exit
