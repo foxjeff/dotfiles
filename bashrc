@@ -48,8 +48,8 @@ export LSCOLORS="cxfxexdxbxegedabagacad"
 PS11='\[\e[1;31m\]>>> [\w] (\[\e[1;34m\]\D{%a, %d %b}\[\e[0m\] \D{%l:%M:%S %p}\[\e[1;31m\])\[\e[0m\] \[\e[1;32m\]\u@\H (\j)\[\e[0m\] \n\$ '
 export PS1='\[\e[1;34m\]\W \[\e[1;35m\](\j)➙ \[\e[0m\]'
 
-export PATH=/usr/local/bin:/usr/local/git/bin:$PATH
-export NODE_PATH='/usr/local/lib/node_modules' #for couchapp and other node modules
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/git/bin:$PATH
+export NODE_PATH='/usr/local/share/npm/lib/node_modules' #for -g node modules
 
 bind -f ~/.inputrc
 

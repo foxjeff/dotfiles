@@ -1,5 +1,6 @@
 ;; init.el
 ;;
+;; 16-mar-2013 in the customize ns group, changed command to be meta and alt to be control
 
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
