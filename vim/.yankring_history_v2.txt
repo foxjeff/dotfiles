@@ -1,0 +1,100 @@
+cript/),v
+*Core**,v
+#,v
+ ,v
+plain,v
+],v
+export HISTSIZE=42,v
+enable ,v
+,V
+shopt -s histappend,v
+.,v
+.extend({}),v
+yPeeps.add(,v
+m,v
+),v
+arf,v
+myPeeps.add(new Person({name:'arf',age:55})),V
+>,v
+alert,v
+Person = Backbone.Model.extend({		defaults: {,V
+12-18-2008: I just called XM @ 1-800-347-0600,v
+***,V
+',v
+",v
+postDataChunk + ",v
++,v
+postDataChunk ,v
+POST,v
+      console.log("Received POST data chunk '"+      postDataChunk + "'.");,V
+      console.log("Received POST data chunk '"+,V
+}k	http.createServer(onRequest).listen(8888);	console.log("Server has started.");,V
+function start(route,handle) {	function onRequest(request, response) {		console.log("Request received.");		var pathname = url.parse(request.url).pathname;		console.log("Request for " + pathname + " received.");		route(handle,pathname,response)		//console.log(request.headers);		//console.log(request.url);		//console.log(request.method);		//console.log(request.httpVersion);		//response.writeHead(200, {"Content-Type": "text/html"});		//response.write("<h1>Hello World</h1>");		//response.end();	},v
+		console.log("Request received.");		var pathname = url.parse(request.url).pathname;		console.log("Request for " + pathname + " received.");		route(handle,pathname,response)		//console.log(request.headers);		//console.log(request.url);		//console.log(request.method);		//console.log(request.httpVersion);		//response.writeHead(200, {"Content-Type": "text/html"});		//response.write("<h1>Hello World</h1>");		//response.end();	},V
+stdout,v
+function start() {	  console.log("Request handler 'start' was called.");}function upload() {	  console.log("Request handler 'upload' was called.");},v
+r,v
+;,v
+handle[,v
+[,v
+e,v
+l,v
+d,v
+n,v
+a,v
+h,v
+},v
+server.start(route.route);,V
+		console.log("Request for " + pathname + " received.");,V
+server,v
+var server = require("./server");,V
+http.createServer(onRequest).listen(8888);console.log("Server has started.");,V
+method,v
+  console.log(request.method);,V
+url,v
+  console.log(request.url);,V
+headers,v
+  console.log(request.headers);,V
+"Request received.",v
+  console.log("Request received.");,V
+├─┬ cradle@0.5.7 │ ├── vargs@0.1.0 │ └─┬ vows@0.5.11 │   └── eyes@0.1,V
+	,v
+`,v
+				,4
+☞,v
+W,v
+HITE RIGHT POINTING INDEXUnicode: U+261E, UTF-8: E2 98 9E,v
+WHITE RIGHT POINTING INDEXUnicode: U+261E, UTF-8: E2 98 9E☞,v
+		#changed to echo -e to get the \n,V
+ $((songDuration*1000)) $songDuration $songPlayed,v
+		growlnotify -n "Pianobar " -t "$stationName" -a "iTerm" -m "Now playing($rating): \"$artist\": \"$title\" on \"$album\" $((songDuration*1000)) $songDuration $songPlayed",V
+-,v
+Now playing($rating): ,v
+on ,v
+:,v
+"Now playing($rating): \"$artist\": \"$title\" on \"$album\" $((songDuration*1000)) $songDuration $songPlayed",v
+$((songDuration/1000)),v
+>Pandora -- ,v
+\,v
+		#echo "$title -- $artist" # > $HOME/.config/pianobar/nowplaying		# or whatever you like...,V
+			#echo "naughty.notify({title = \"pianobar\", text = \"$1 failed: $pRetStr\"})" | awesome-client -,V
+			#echo "naughty.notify({title = \"pianobar\", text = \"$1 failed: Network error: $wRetStr\"})" | awesome-client -,V
+#	songfinish)#		# scrobble if 75% of song have been played, but only if the song hasn't#		# been banned#		if [ -n "$songDuration" ] &&#				[ $(echo "scale=4; ($songPlayed/$songDuration*100)>50" | bc) -eq 1 ] &&#				[ "$rating" -ne 2 ]; then#			# scrobbler-helper is part of the Audio::Scrobble package at cpan#			# "pia" is the last.fm client identifier of "pianobar", don't use#			# it for anything else, please#			scrobbler-helper -P pia -V 1.0 "$title" "$artist" "$album" "" "" "" "$((songDuration/1000))" &#		fi#		;;,V
+exports.prelude = prelude,v
+exports.prelude = prelude,V
+role:'vip',v
+#needed for rbenv install`,v
+require('zappa') ->,V
+require('zappa') ->  @get '/': 'hi',V
+"got a request: " ,v
+	... 	... 	... 	... ,6
+http.createServer(function(request, response) {...   response.writeHead(418, {"Content-Type": "text/plain"});...   response.write("Hello World");...   response.end();... }).listen(8888);,V
+function(doc) {    var shop, price, value;    if (doc.item && doc.prices) {        for (shop in doc.prices) {            price = doc.prices[shop];            key = [doc.item, price];            emit(key, shop);        }    }},V
+	...   for (shop in doc[farf].prices),V
+for (farf in doc){	for (shop in farf.prices)		{price=farf.prices[shop];value=[farf.item,shop];console.log(price,value)}},V
+xterm,v
+ -f ~/.aliases ,v
+\[\e[1;31m\]>>> [\w] (\[\e[1;34m\]\D{%a, %d %b}\[\e[0m\] \D{%l:%M:%S %p}\[\e[1;31m\])\[\e[0m\] \[\e[1;32m\]\u@\H (\j)\[\e[0m\] \n\$ ,v
+cxfxexdxbxegedabagacad,v
+/Applications/MacVim.app/Contents/MacOS/Vim,v
+ -f /etc/bashrc ,v

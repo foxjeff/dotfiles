@@ -1,0 +1,61 @@
+set nocompatible
+filetype on
+filetype plugin on
+filetype indent on
+syntax enable
+set syntax=on
+set showcmd
+set showmatch
+set incsearch
+set term=xterm-color
+set runtimepath=~/.vim2/,/Applications/vim70/Vim.app/Contents/Resources/vim/vimfiles,/Applications/vim70/Vim.app/Contents/Resources/vim/runtime,/Applications/vim70/Vim.app/Contents/Resources/vim/vimfiles/after,~/.vim/after
+set autoindent
+set smartindent
+set ignorecase
+set smartcase
+set history=500
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+set statusline=%<%f%h%m%r\ \ %([%{Tlist_Get_Tagname_By_Line()}]%)%=%l,%c%V\ %P
+"set statusline=%<%f%h%m%r\ \ %=%l,%c%V\ %P
+set dir=/tmp
+set laststatus=2
+"set statusline=%<%f%h%m%r%=%l,%c%V\ %P
+set ruler
+set so=9999
+set backspace=2
+set hls
+"
+"iunmap <TAB>
+imap <leader>t <Plug>Jumper
+imap jj <esc>
+nmap qq :q
+set pastetoggle=<F4>
+nmap <F1> gT
+nmap <F2> gt
+nmap <F3> :nohlsearch
+vnoremap > >gv
+vnoremap < <gv
+noremap <silent> <F5> :buffers<CR>
+map <silent> \ww :w<cr>
+imap <leader>ww <esc>:w<cr>
+map \bw :bw<CR>
+"
+nmap <silent><leader>] o<esc>
+nmap <silent><leader>[ O<esc>
+
+"nun ,<SPACE>
+map , :bprevi<CR>
+"map . :bnext<CR>
+"
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+"
+map <leader>f :WinFullScreen<cr>
+"unmap <esc>,
+"unmap <esc>-
+cno \h ~/
+cno \v ~/.vim/
+cno \\ ~/.
+nmap <silent> \bb :call BufferList()<CR>

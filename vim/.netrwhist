@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/anand/Dropbox/dotfiles-mbp'
+let g:netrw_dirhist_2='/Users/anand/Dropbox/work'
+let g:netrw_dirhist_3='/Users/anand/Dropbox/dotfiles-mbp/.vim'
+let g:netrw_dirhist_4='/Users/anand/Dropbox/work'
+let g:netrw_dirhist_5='/Users/anand/Dropbox'
+let g:netrw_dirhist_6='/Users/anand/Dropbox/work/gits/taskr'
+let g:netrw_dirhist_7='/Users/anand/Dropbox/work'
+let g:netrw_dirhist_8='/Users/anand/.emacs.d/org-7.4'
+let g:netrw_dirhist_9='/private/etc/apache2/other'
