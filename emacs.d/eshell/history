@@ -1,234 +1,128 @@
-ls
-brew
-path
-echo $path
-echo $PATH
-exit
-ls
-which ls
-ls --group-directories-first
-echo $PATH 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-echo $PATH 
-which ls
-ls
-alias ls 'ls --color=auto --group-directories-first'
-ls
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls'
-ls
-alias ls 'ls --color=auto --group-directories-first'
-ls
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls --group-directories-first'
-ls
-ls -a
-ls -al
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls --group-directories-first --color=auto'
-ls -al
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls --group-directories-first --color=auto $*'
-ls -al
-ls -al Dropbox/work/org-mode/
-ls -al Dropbox/work/org-mode/
-ls -al Dropbox/work/org-mode/
-ls -alp Dropbox/work/org-mode/
-cd Dropbox/work/org-mode/
-find-file hapi.js 
-ls -p
-ls -p ..
-less ../cpumeter.rb 
-../cpumeter.rb 
-ls -alp ../weatherparser*
-../weatherparser3.rb
-ls
-../memmeter.rb 
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls -p --group-directories-first --color=auto $*'
-ls
-ls -otrhu
-ls -otrhua
-ls -otrhuar
-ls -othua
-ls -othuar
-ls -othuarG
-ls -othuarGg
-exit
-ls
-brew
-path
-echo $path
-echo $PATH
-exit
-ls
-which ls
-ls --group-directories-first
-echo $PATH 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-echo $PATH 
-which ls
-ls
-alias ls 'ls --color=auto --group-directories-first'
-ls
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls'
-ls
-alias ls 'ls --color=auto --group-directories-first'
-ls
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls --group-directories-first'
-ls
-ls -a
-ls -al
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls --group-directories-first --color=auto'
-ls -al
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls --group-directories-first --color=auto $*'
-ls -al
-ls -al Dropbox/work/org-mode/
-ls -al Dropbox/work/org-mode/
-ls -al Dropbox/work/org-mode/
-ls -alp Dropbox/work/org-mode/
-cd Dropbox/work/org-mode/
-find-file hapi.js 
-ls -p
-ls -p ..
-less ../cpumeter.rb 
-../cpumeter.rb 
-ls -alp ../weatherparser*
-../weatherparser3.rb
-ls
-../memmeter.rb 
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls -p --group-directories-first --color=auto $*'
-ls
-ls -otrhu
-ls -otrhua
-ls -otrhuar
-ls -othua
-ls -othuar
-ls -othuarG
-ls -othuarGg
-exit
-echo $PATH 
 alias
-ls -othuarGg
-ls -othuarGg ~/.emacs.d/
-ls -othuarGg ~/.emacs.d/eshell/
-cat -othuarGg ~/.emacs.d/eshell/alias 
-cat ~/.emacs.d/eshell/alias 
-cat ~/.emacs.d/eshell/history 
-cat ~/.emacs.d/eshell/history | wc 
-man wc
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-(defun erpa () "erpa derpa" (+ 1 3))
-(erpa)
-(+ 1 2)
-(defun fx ()			    (+ 1 2))
-(fx)
-history -h
-history -a
-ls
-brew
-path
-echo $path
-echo $PATH
-exit
-ls
-which ls
-ls --group-directories-first
-echo $PATH 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-echo $PATH 
-which ls
-ls
-alias ls 'ls --color=auto --group-directories-first'
-ls
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls'
-ls
-alias ls 'ls --color=auto --group-directories-first'
-ls
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls --group-directories-first'
-ls
-ls -a
-ls -al
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls --group-directories-first --color=auto'
-ls -al
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls --group-directories-first --color=auto $*'
-ls -al
-ls -al Dropbox/work/org-mode/
-ls -al Dropbox/work/org-mode/
-ls -al Dropbox/work/org-mode/
-ls -alp Dropbox/work/org-mode/
-cd Dropbox/work/org-mode/
-find-file hapi.js 
-ls -p
-ls -p ..
-less ../cpumeter.rb 
-../cpumeter.rb 
-ls -alp ../weatherparser*
-../weatherparser3.rb
-ls
-../memmeter.rb 
-alias ls '/usr/local/opt/coreutils/libexec/gnubin/ls -p --group-directories-first --color=auto $*'
-ls
-ls -otrhu
-ls -otrhua
-ls -otrhuar
-ls -othua
-ls -othuar
-ls -othuarG
-ls -othuarGg
-exit
-echo $PATH 
+unalias -a ff1o
 alias
-ls -othuarGg
-ls -othuarGg ~/.emacs.d/
-ls -othuarGg ~/.emacs.d/eshell/
-cat -othuarGg ~/.emacs.d/eshell/alias 
 cat ~/.emacs.d/eshell/alias 
-cat ~/.emacs.d/eshell/history 
-cat ~/.emacs.d/eshell/history | wc 
-man wc
+ffo ~/.emacs.d/eshell/alias
+alias
+exit
+alias
+echo $PATH
 ls
+ls ..
+addpath --help
+addpath -b /usr/local/bin
+echo $PATH
+node
+which ls
+which ff
+eshell-path-env
+echo eshell-path-env
+addpath
+'eshell-visual-commands'
+top
+node
+export PS1='\[\e[1;34m\]\W \[\e[1;35m\](\j)➙ \[\e[0m\]'
+PS1
+echo $PS1
+PS1='\[\e[1;34m\]\W \[\e[1;35m\](\j)➙ \[\e[0m\]'
+define 
+alias node 'NODE_NO_READLINE=1 node'
+node
+node
+ffo ~/.emacs.d/eshell/login
+exit
+addpath
+node 
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-(defun erpa () "erpa derpa" (+ 1 3))
-(erpa)
-(+ 1 2)
-(defun fx ()			    (+ 1 2))
-(fx)
-history -h
+ls ..
+setenv --help
+export NODE_PATH='/usr/local/share/npm/lib/node_modules' #for -g node modules
+echo $NODE_PATH/
+echo $NODE_PATH
+getenv NODE_PATH
+setenv FOO 'bar'
+echo $FOO
+(set-face-attribute 'eshell-prompt nil :foreground "turquoise1")
+(set-face-attribute 'eshell-prompt nil :foreground "orange")
+(format-time-string "%c" (current-time))
+history --help
+which history
 history -a
-ls ~/.emacs.d/eshell/
-ls -al ~/.emacs.d/eshell/
-ls ~/.emacs.d/eshell/
-grep -h
-man grep
-grep -nH --color -e server hapi.js
-(grep -nH --color -e server hapi.hs )
-(grep "-nH --color -e server hapi.hs"  )
-grep -nH --color -e server hapi.js
-lgrep -nH --color -e server hapi.js
-lgrep
-lgrep 
-lgrep server hapi.js 
-lgrep --color server hapi.js 
-(lgrep server hapi.js)
-(lgrep "server" "hapi.js")
-which grep
-echo $PATH 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-echo $PATH 
-grep -nH --color -e server hapi.js
-ls 
-(describe-bindings "M")
-(describe-bindings "M-")
-(describe-bindings M)
-(describe-bindings 'M)
-(describe-bindings "C-x")
-history -a
+ls
+d
+alias
+alias d  'dired .'
+d
+alias do  'dired-other-window $1'
+do
+do ~/Dropbox/work/
+exit
+ls
+cd Dropbox/work/
+ls
+exit
+d
+ls
+alias
+node
+exit
+echo $PATH
+echo eshell-path-env
+eshell-path-env
+d
+exit
+ls
+cd ~/Dropbox/work/
+ls
+ls node-coffee/
+echo $LSCOLORS 
+alias
+ff ~/.bashrc
+setenv --help
+setenv FOO 'bar'
+echo $FOO
+setenv FOO
+echo $FOO
+echo $FOO=$LSCOLORS 
+echo $FOO
+echo FOO=$LSCOLORS 
+echo $FOO
+FOO
+echo FOO
+echo $FOO
+setenv FOO $LSCOLORS 
+echo $FOO
+setenv LSCOLORS
+echo $LSCOLORS 
+ls
+ls node-coffee/
+setenv LSCOLORS Fx
+ls
+setenv LSCOLORS Fx
+ls node-coffee/
+alias
+ls --color=none node-coffee/
+dircolors 
+ls node-coffee/
+dircolors -b
+dircolors -p
+ls node-coffee/
+setenv LS_COLORS
+echo $LSCOLORS 
+echo $LS_COLORS
+setenv LSCOLORS
+ls node-coffee/
+getenv NODE_PATH
+getenv LSCOLORS
+.mp3 00;36
+echo $LS_COLORS
+ls node-coffee/
+ls --color=none node-coffee/
+ls --color=none node-coffee/bb-tasks/
+ls -R --color=none node-coffee/bb-tasks/
+node-coffee/bb-tasks/:
+ls node-coffee/
+echo $LS_COLORS
+echo $LSCOLORS
+ls Watchers/
+exit

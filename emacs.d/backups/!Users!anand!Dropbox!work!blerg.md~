@@ -1,0 +1,29 @@
+
+#### Other
+
+- create a cmd line utility for searching zsh-history and tcsh-history and bringing results to bash
+- sudo periodic daily weekly monthly
+- use sudo opensnoop -pv PID #or without PID to everything
+- learning by visualizing, pattern-recognition, using tools not-quite invented, e.g. Light Table
+- Bret Victor’s site - http://worrydream.com/
+- consider using Mac app: Marked, including Evernote integration@done(2012-06-24)
+- looks like editing in vim then copy/pasting the Marked preview into Evernote is the way to go@done(2012-06-24)
+- get dotfiles organized and uploaded to git@done(2012-06-21)
+
+#### sir arfington
+* Other App Ideas:
+
+     1.  A Timer app like Timer with big pre-sets, but allow for MULTIPLE simultaneous timers
+     1.  A Weather app that parses histoical data looking for trends
+
+     1. Temp, air pressure, winds: speed and direction, percipitation, dew point
+     1. Mean w/std and variance
+     1. Mode
+     1. Median
+
+* * *
+
+- Prioritizer: present a list of user-entered choices and use better-or-worse results from pairings
+- GUI for tree
+- Log pianobar music, markdown'd to file open in makred
+- change everwatch.rb to accept  watch file from the command line so that 2 notes can be watched

@@ -1,0 +1,190 @@
+;history in meta-x - meta-n/p
+;iswitchb -- yes?
+;ido -- yes
+;w3m is failing...need terminal emacs? or clisp? FIXED - reinstalled emacs-w3m from scratch
+
+;desktop-save - but what about windows
+;quick window resizing: full height/width and back again
+;http://duckduckgo.com
+
+;pianobar remote -- elisp?
+
+;; Add external projects to load path
+(dolist (project (directory-files (concat dotfiles-dir "my-stuff/") t "\\w+"))
+  (when (file-directory-p project)
+    (add-to-list 'load-path project)))
+
+;; (pp project)))
+
+;; org-mode templates
+(setq org-capture-templates
+      '(("n" "New Note" item (file "~/Dropbox/work/org-mode/new-notes.org")
+             "- %?  %U\n %i\n %a")
+				("t" "Todo" entry (file+headline "~/Dropbox/work/org-mode/new-notes.org" "Tasks")
+             "* TODO %?\n  %i\n  %a")))
+
+;rainbow-delimeters
+(add-to-list 'load-path "/Users/anand/.emacs.d/anand/")
+(require 'rainbow-delimiters)
+
+;; ELPA
+(setq package-user-dir (concat dotfiles-dir "elpa"))
+(require 'package)
+(dolist (source '(("melpa" . "http://melpa.milkbox.net/packages/")
+                  ("marmalade" . "http://marmalade-repo.org/packages/")
+                  ("elpa" . "http://tromey.com/elpa/")))
+  (add-to-list 'package-archives source t))
+(package-initialize)
+(require 'color-theme-actress)
+(require 'color-theme-blackboard)
+(require 'color-theme-monokai)
+(require 'color-theme-gruber-darker)
+(require 'color-theme-railscasts)
+(mouse-avoidance-mode 'banish)
+
+
+;; inspired by Erik Naggum's `recursive-edit-with-single-window'
+(defmacro recursive-edit-preserving-window-config (body)
+ "*Return a command that enters a recursive edit after executing BODY.
+ Upon exiting the recursive edit (with\\[exit-recursive-edit] (exit)
+ or \\[abort-recursive-edit] (abort)), restore window configuration
+ in current frame."
+ `(lambda ()
+ "See the documentation for `recursive-edit-preserving-window-config'."
+      (interactive)
+      (save-window-excursion
+        ,body
+        (recursive-edit))))
+
+;; Use it like this:
+(global-set-key (kbd "C-c 0") (recursive-edit-preserving-window-config (delete-window)))
+(global-set-key (kbd "C-c 1") (recursive-edit-preserving-window-config
+                                (if (one-window-p 'ignore-minibuffer)
+                                    (error "Current window is the only window in its frame")
+                                  (delete-other-windows))))
+
+
+;; (require 'weather)
+;; (require 'metar-report)
+;;alist stuff
+(setq brar '((a . arf) (b . blerg)))
+(cdr (assoc 'b brar))
+(car (rassoc 'blerg brar))
+
+;; this may come in handy
+;(setq org-publish-project-alist
+;      '(("my-project"
+;           :base-directory ...
+;           :htmlized-source t)))
+
+;;scrolling
+(setq scroll-margin 5)
+(setq scroll-conservatively 99)
+
+
+;; don't need most of this in emacs 24.2
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+(package-install 'clojure-mode)
+
+;; probably need this ::DONE::
+(require 'clojure-mode)
+
+;;  for inclusion in init.el
+(add-hook 'nrepl-interaction-mode-hook
+  'nrepl-turn-on-eldoc-mode)
+
+;; iy-goto-char.el
+(require 'iy-go-to-char)
+(global-set-key (kbd "C-c f") 'iy-go-to-char)
+(global-set-key (kbd "C-c F") 'iy-go-to-char-backward)
+(global-set-key (kbd "C-c ;") 'iy-go-to-char-continue)
+(global-set-key (kbd "C-c ,") 'iy-go-to-char-continue-backward)
+
+
+;(package-install 'doremi-frm.el);not working
+
+;; other-window "quit" function
+;; working, copied to init.el
+(defun quit-other-window ()
+	"switch to other-window, quit it"
+	(interactive)
+	(other-window 1)
+	;(insert-char (string-to-char "q") 1)
+	(command-execute "q")
+	)
+(global-set-key (kbd "C-c q") '(lambda () (interactive) (quit-other-window)))
+
+;from StackOverFlow.com
+;http://stackoverflow.com/questions/4642835/how-to-change-the-cursor-color-on-emacs
+;user zarza: http://stackoverflow.com/users/608022/zarza
+
+; Using in Emacs 24.0 
+
+(defvar blink-cursor-colors (list  "#92c48f" "#6785c5" "#be369c" "#d9ca65")
+  "On each blink the cursor will cycle to the next color in this list.")
+
+(setq blink-cursor-count 0)
+(defun blink-cursor-timer-function ()
+  "Zarza wrote this cyberpunk variant of timer `blink-cursor-timer'. 
+Warning: overwrites original version in `frame.el'.
+
+This one changes the cursor color on each blink. Define colors in `blink-cursor-colors'."
+  (when (not (internal-show-cursor-p))
+    (when (>= blink-cursor-count (length blink-cursor-colors))
+      (setq blink-cursor-count 0))
+    (set-cursor-color (nth blink-cursor-count blink-cursor-colors))
+    (setq blink-cursor-count (+ 1 blink-cursor-count))
+    )
+  (internal-show-cursor nil (not (internal-show-cursor-p)))
+  )
+
+;; unused stuff from init.el
+;(require 'icicles)
+;(eval-after-load "ring" '(progn (require 'ring+)))
+;(icy-mode)
+
+;(setq redisplay-dont-pause t                                                       
+;       scroll-margin 1
+;       scroll-step 1
+;       scroll-conservatively 10000
+;       scroll-preserve-screen-position 1)
+
+
+;; some vim-style movement for read-only buffers
+;; (defun my-scroll-down () (interactive) (scroll-down 1))
+;; (defun my-scroll-up () (interactive) (scroll-up 1))
+ 
+;; (add-hook 'Info-mode-hook '(lambda () (interactive) (local-set-key "J" my-scroll-up)))
+;; (add-hook 'Info-mode-hook '(lambda () (interactive) (local-set-key "K" 'my-scroll-down)))
+;; (add-hook 'Info-mode-hook '(lambda () (interactive) (local-set-key "j" 'next-line)))
+;; (add-hook 'Info-mode-hook '(lambda () (interactive) (local-set-key "k" 'previous-line)))
+;; (add-hook 'help-mode-hook '(lambda () (interactive) (local-set-key "J" 'my-scroll-up)))
+;; (add-hook 'help-mode-hook '(lambda () (interactive) (local-set-key "K" 'my-scroll-down)))
+;; (add-hook 'apropos-mode-hook '(lambda () (interactive) (local-set-key "J" 'my-scroll-up)))
+;; (add-hook 'apropos-mode-hook '(lambda () (interactive) (local-set-key "K" 'my-scroll-down)))
+
+;(global-set-key "\C-w" 'backward-kill-word) ;not sure about these 2
+;(global-set-key "\C-x\C-k" 'kill-region)
+
+;; not sure i need this with emacs 24.2
+;; (require 'w3m-load)
+;;  (setq w3m-use-cookies 1)
+;;  (setq browse-url-browser-function 'w3m-browse-url)
+;;  (autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
+;;  ;;optional keyboard short-cut
+;;  (global-set-key "\C-xm" 'browse-url-at-point)
+
+;; (setq tramp-mode nil)
+
+;; (require 'org-install)
+;;  (setq org-log-done 'time)
+;;  (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+;;  (global-set-key "\C-cl" 'org-store-link)
+;;  (global-set-key "\C-ca" 'org-agenda)
+;;  (global-set-key "\C-cb" 'org-iswitchb)
+
+;; turn off menu-bar
+;; (menu-bar-mode 0)

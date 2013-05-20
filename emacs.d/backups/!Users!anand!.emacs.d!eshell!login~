@@ -1,0 +1,5 @@
+addpath -b /Users/anand/.rbenv/shims
+addpath -b /usr/local/opt/coreutils/libexec/gnubin
+addpath -b /usr/local/share/npm/bin
+addpath -b /usr/local/git/bin
+addpath -b /usr/local/bin

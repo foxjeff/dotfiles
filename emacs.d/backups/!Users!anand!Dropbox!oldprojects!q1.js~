@@ -1,0 +1,6 @@
+var foo = function question1() {
+	var sum = null;
+	// define the sum function here
+	
+	return sum;
+}

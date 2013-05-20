@@ -1,0 +1,76 @@
+#!/usr/bin/env ruby
+# everwatch.rb by Brett Terpstra, 2011
+# http://brettterpstra.com/2011/11/14/marked-scripts-nvalt-evernote-marsedit-scrivener/
+# http://support.markedapp.com/kb/how-to-tips-and-tricks/marked-bonus-pack-scripts-commands-and-bundles
+# Updated for latest Evernote configuration (2013) and quick launch of Marked.app - spetschu
+#
+# Watch Evernote for updates and put the current content of the editor into a preview file for Marked.app
+# <http://markedapp.com>
+require 'shellwords'
+
+trap("SIGINT") { exit }
+
+watch_folder = File.expand_path("~/Library/Containers/com.evernote.Evernote/Data/Library/Application Support/Evernote/accounts/Evernote")
+marked_note = File.expand_path("~/.Marked Preview.md")
+#marked_note = File.expand_path("~/EvernoteSelection.md")
+counter = 0
+
+def get_html
+  %x{ osascript <<APPLESCRIPT
+          tell application "Evernote"
+              if selection is not {} then
+                  set the_selection to selection
+                  set the_html to HTML content of item 1 of the_selection
+              else
+                  set the_html to ""
+              end if
+              return the_html
+          end tell
+  APPLESCRIPT}
+end
+
+def write_note(note,target)
+  unless note == ""
+    txtnote = %x{echo #{Shellwords.escape(note)}|textutil -stdin -convert txt -stdout}
+    File.open(target,'w+') {|f|
+      f.puts txtnote
+    }
+  end
+end
+
+unless File.exists?(marked_note)
+  File.open(marked_note,"w+") {|f|
+    f.puts "## Loading Evernote note\n\nThis file will update after you make a change and save."
+  }
+else
+  write_note(get_html,marked_note)
+end
+
+`open -a Marked.app ~/EvernoteSelection.md`
+
+while true do # repeat infinitely
+
+  # recursive glob needed for current Evernote setup
+  files = Dir.glob( File.join( watch_folder, "**/*") )
+
+  # check for timestamp changes since the last loop
+  new_hash = files.collect {|f| File.exists?(f) ? [ f, File.stat(f).mtime.to_i ] : false }
+  hash ||= new_hash
+  diff_hash = new_hash - hash
+
+  if diff_hash.empty? # if there's no change
+    # if it's been less than 10 seconds, increment the counter
+    # otherwise, set it to zero and wait for new changes
+    counter = (counter < 10 && counter > 0) ? counter + 1 : 0
+  else
+    hash = new_hash
+    counter = 1
+  end
+
+  if counter > 0 # if the time is running
+    write_note(get_html,marked_note)
+  end
+
+  sleep 1
+
+end

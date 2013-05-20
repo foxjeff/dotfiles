@@ -1,0 +1,197 @@
+ me:  hey
+ Kevin:  morning
+i still work at fleshlight, re: your question the other day
+trying to work on that, though haa
+ me:  ah, got it
+ Kevin:  now that we're settled back in the states and the kid has arrived
+but in the meantime they are looking for contractors, remote work is ok
+ me:  oh, i got it backwards
+lol
+ Kevin:  i figured that's what you thought 
+ me:  heh; well it so happens i'm looking for work, still
+ Sent at 7:57 AM on Thursday
+ me:  so i'd be interested, if steve would be okay with me
+ Sent at 7:59 AM on Thursday
+ Kevin:  ok, i'll discuss
+ me:  is david still there?
+ Kevin:  they've actually been reaching out to former employees for these contracts
+yeah
+ me:  you know what they'll be paying?
+ Kevin:  no, i can find out today
+ me:  cool
+need my phone#?
+ Kevin:  that'll help
+sure 
+ me:  402.516.4502
+thanks for checking into this for me; i appreciate it muchly
+ Kevin:  sure thing
+i'll see david in about an hour and see if i can get back to you this morning
+ me:  great
+ Kevin:  gotta go for now
+later
+ me:  ok
+ Sent at 8:04 AM on Thursday
+ Kevin:  David said that we would be interested in contracting out to you
+When I asked what we would be willing to pay, he asked what you're looking for 
+So, ball's in your cour
+t
+If you want to skip me and go straight to him - david@fleshlight.com
+ me:  Great!
+ Kevin:  Although I don't mind relaying info
+ me:  If that's alright with you
+  Kevin:  Either way
+I don't mind
+I'm hoping you'll be working with me
+but he may have other plans
+supposedly we're no longer supposed to do dev work and only outsource
+according to steve
+ me:  ah
+ Kevin:  i'm not really happy about that
+but what can you do
+so i would rather work with someone i know
+ me:  what will you be doing?
+supervising?
+ Kevin:  right now, i'm focusing on building a rest api
+oh
+i guess
+and maintaining existing stuff
+ me:  what frameworks are you guys using?
+ Kevin:  we (the three devs here) aren't supposed to build, only maintain and work with contractors to build
+Overall, we're still on the in-house PHP framework a former employee built after you left. It's not well-engineered at all. Some of the classes are over 10 years old, even - which is a really long time in PHP's evolution.
+ me:  you using latest php?
+ Sent at 9:39 AM on Thursday
+ Kevin:  We in the process of switching all of our retail and dev sites to use Magento  which is based off of Zend
+ me:  good to know
+so david wants to know how much i want as the next step?
+ Kevin:  we're using 5.2.17 on the old framework (that we call Cart of FleshCart)
+yep
+I wish we were on a more recent version but I'm holding off on requesting that right now
+ me:  and i assume steve knows you and david are talking to me?
+ Kevin:  no
+he doesn't need to know
+ me:  okay
+ Kevin:  he'll find out but it's not important i think
+he doesn't keep track of our contractors
+which is one reason david talked him into moving that way
+he got tired of hiring people only for them to be fired or stolen by another department
+and yes, the next step is what your rate is
+ me:  will this be for a specific piece of work, or sort of on-going if things are working out?
+ Kevin:  my projects are a bit different from the main retail/distribution stuff
+i'm not totally sure
+I imagine the latter
+ me:  good to know
+ Kevin:  since we're supposed to be not so hands-on with building new projects
+ me:  hard to believe you've been the 7 years
+i've never been at a company that long
+ Sent at 9:46 AM on Thursday
+ Kevin:  My main personal project is the affiliate system. I'm moving it off the FleshCart framework onto to-be-determined. It definitely needs to have a greater separation of front-end and back-end. I'm currently working on a REST API for some aspects of it, so our Magento sites and future mobile apps can communicate with it.
+Yeah I know, I looked at my linkedin profile the other day and it said 7 years X months and I was astounded at it myself.
+ me:  yeah, REST API's are the way to go
+ Kevin:  What I'm using for that is a simple REST-specific framework (so it's barebones) called Restler by Luracast. It's on github.
+I need to figure out a future framework or other option for the backend of the affiliate system, as well as the frontend.
+ me:  node.js is pretty cool
+javascript though
+ Kevin:  SO if you work with me that's the kind of thing we would be doing. Might be some opportunity there.
+Yeah, I was considering nodejs
+ me:  some fantastic frameworks for it
+ Kevin:  Since it's a stats-heavy application it might actually make sense
+ me:  everything still in mysql?
+this is whole thing is a little weird as i was just looking at what i had done for fl and pp a few days ago
+ Kevin:  heh
+yeah it's still all in mysql, or some fork of it at least
+migrating to a different db would be a pain since there's years of existing data
+but if there's a performance improvement it could be justified
+ me:  for sure, just thought some of your extra work might have gone to a NoSQL like mongodb
+ Kevin:  I considered it at one point but there's been some restrictions because of sysadmin workload and focusing on using fleshcart
+ me:  makes sense
+ Kevin:  since fncash, the affiliate system, is going to be free of those restrictions eventually though, things aren't so limited if they make sense
+and aren't a huge time-sink in development
+that's the main thing, steve doesn't like work on things that he can't see results for
+ me:  well the big change would be using node instead of php, bit of learning curve, but javascript is pretty good language and lots of companies are switching to it
+ Kevin:  yeah
+i've dabbled
+ me:  but its the frameworks for node that really give you leverage
+ Kevin:  anyway
+ me:  let's say $40/hour
+ Kevin:  ok
+ me:  thanks again, Kevin
+ Sent at 9:58 AM on Thursday
+ Kevin:  sure thing
+let's see what he says
+gotta go to a meeting
+ me:  okay, ttyl
+ Kevin:  a crappy one
+ me:  ah
+ Kevin:  hehe
+sort of drama-filled 
+ me:  keep you head down!
+ Sent at 10:00 AM on Thursday
+ Kevin:  he said ok on the rate and you'll be working with me
+ Sent at 10:08 AM on Thursday
+ me:  wow, that is good news!
+what's the next step?
+ Sent at 10:17 AM on Thursday
+ Kevin:  I'm not sure quite yet, I'll have to get back to you on specifics of getting you signed on.
+So it might take a few days since we just moved into a new building
+ me:  where's that?
+ Kevin:  close to the airport
+ me:  and where are you living now?
+ Kevin:  we had been near 35 & ben white, in 2 different buildings. now we're in 1
+brodie & william cannon
+close to where i've always been in austin really 
+ me:  ah
+been meaning to ask you, have you been back to Pho?
+ Kevin:  once we get you setup as a contractor, we'll get your access and then we should video conference or something to go over some things
+oh yeah
+a friend brought some to us on the second week of having the baby
+ me:  so do you think this will be full-time?
+ Kevin:  it could be, i need some more time to chat with david. the way our new building is setup there's a big meeting in the middle of the room where david and i sit, so it's hard to have a conversation right now
+so i'll be talking to him later
+ me:  okay, great
+ Kevin:  http://www.fncash.com/?phpinfo=fleshin
+ Sent at 10:51 AM on Thursday
+ me:  i'll start getting my machine setup for php work
+ Kevin:  k
+and i'm using jquery with jqueryUI on that site also
+jquery 1.9.1, not 1.2
+ me:  i'm running 5.3.15, but i'm sure i can find 5.2.17
+ Kevin:  i mean not 2.0
+ me:  okay, got that already
+ Kevin:  use jqueryui for the calendar widget, tabs, dialogs
+a company is currently working on a responsive redesign for desktop/mobile
+although, honestly it doesn't look that different
+ me:  cool, i'm pretty familiar with jQuery already
+ Kevin:  you might want to research magento a little since we'll be communicating with magento sites
+ me:  of course
+ Kevin:  i personally don't like magento but whatever 
+ me:  you know, there are some sweet client-side js frameworks that could be used easily
+ Kevin:  yep
+ me:  have you seen angular.js?
+ Kevin:  i'm aware of some of them, there are so many choices
+yep
+also, we're not married to jquery or jquery ui going forward
+if something's not compatible with jquery or whatever
+ me:  i've been looking to that stuff pretty heavily that last few months
+ Kevin:  yeah i looked into angular
+ me:  oh no, EVERYTHING is compatible with jquery, lol
+ Kevin:  i know hhaha
+ me:  angular is sweet because it has these binding that auto-fire events when the in browser model has changed
+ Kevin:  yep
+i actually tried to talk david into using that for his html5 warehouse app
+ me:  it uses {{}} syntax
+you can do any js expression in there
+so basically, you ajax or php the stuff from the back-end into in-browser models, and it is real easy after that
+i had been playing with backbone but started looking at marionette, chaplin and then ember and anguar
+they are all good, but i got going with angular much faster and with a lot less code
+and it wasn't expecting too, as I had a prejudice against it since it came from google, lol
+i wasn't...
+ Kevin:  hehe
+speaking of google, i've been looking into dart a lot
+ me:  cool
+ Kevin:  it's actually pretty sweet
+except for the fact that it's google
+ me:  heh
+i've been learning clojure and clojure-script
+ Kevin:  but it's like javascirpt designed smartly
+ Sent at 11:03 AM on Thursday
+ me:  yea

@@ -1,0 +1,11 @@
+"ul,ol,p {"
+body {
+	font-family: 'Georgia', 'Times New Roman', 'HelveticaNeue', 'Helvetica Neue', 'Arial', serif;
+}
+a:link, a:visited {
+ color: blue;
+}
+a:hover {
+	display: inline;
+	color: green;
+}

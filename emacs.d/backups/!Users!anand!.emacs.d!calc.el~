@@ -1,0 +1,5 @@
+
+;;; Mode settings stored by Calc on Mon Apr 29 11:55:17 2013
+(setq calc-algebraic-mode t)
+;;; End of mode settings
+

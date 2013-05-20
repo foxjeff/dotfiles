@@ -1,0 +1,9 @@
+#addpath's 
+addpath -b /Users/anand/.rbenv/shims
+addpath -b /usr/local/opt/coreutils/libexec/gnubin
+addpath -b /usr/local/share/npm/bin
+addpath -b /usr/local/git/bin
+addpath -b /usr/local/bin
+
+#for global node modules
+setenv NODE_PATH '/usr/local/share/npm/lib/node_modules'

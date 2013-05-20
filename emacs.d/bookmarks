@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("gls"
+(("em"
+ (filename . "~/Dropbox/work/software-ideas-other.md")
+ (front-context-string . "r\n- change face ")
+ (rear-context-string . "lay in minibuffe")
+ (position . 5282))
+("php"
+ (filename . "~/Dropbox/work/software-ideas-other.md")
+ (front-context-string . "f\n\n* <http://sta")
+ (rear-context-string . "*\n\n#### Php Stuf")
+ (position . 7485))
+("gls"
  (filename . "~/Dropbox/work/org-mode/emacs-todo.org")
  (front-context-string . "\n** [[http://git")
  (rear-context-string . "e=iso -alGgphtu'")

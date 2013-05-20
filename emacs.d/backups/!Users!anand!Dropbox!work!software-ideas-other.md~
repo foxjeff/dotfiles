@@ -1,0 +1,262 @@
+Title: Software Ideas and Other
+Author: Me
+Date: Started weeks ago, today is 5 May 013
+
+> *'twould be better not to edit this file in Evernote*
+
+#### More
+
+- consider setting up apple mail or some desktop client pointing to pobox or icloud so proper, i.e. non-gdrive, attachments can be sent
+- The v180 concept; ROI for business' with small marketing budgets.
+    - Coupons
+    - Discounts
+    - Membership Clubs
+        - newsletters
+    - on table promotions -- Table Tents
+    - SEO and wordpress
+    - <span style="color:green;">get that book on ROI for websites from @half-price books</span>
+    - check out chrome extensions for SEO; look for woo and wp versions
+<br>
+- create a cmd line utility for searching zsh-history and tcsh-history and bringing results to bash
+    - use node and coffeescript
+    - command-line options library for node
+        * <http://stackoverflow.com/questions/12925802/run-a-node-js-script-with-command-line-arguments/12925835#12925835>
+        * If you want to do more sophisticated stuff, the following modules are really helpful:
+            * [node-optimist](https://github.com/substack/node-optimist) by James Halliday aka substack
+            * [commander](https://github.com/visionmedia/commander.js) by TJ Holowaychuk -- best of lot
+            * [nopt](https://github.com/isaacs/nopt) by Isaac Schlueter
+        * And for fun
+            * [cli-table](https://github.com/isaacs/nopt) by Guillermo Rauch -- console tables
+            * [node-multimeter](https://github.com/isaacs/nopt) by substack -- progress bars
+            * [colors](https://github.com/Marak/colors.js) by Marak -- colored console output
+        * one more
+            * [nconf](https://github.com/flatiron/nconf)
+        * and simply
+            ```
+            // print process.argv
+            process.argv.forEach(function (val, index, array) {
+              console.log(index + ': ' + val);
+            });
+            ```
+    - options or commands
+        - all, tcsh, bash, zsh
+        - match one|all
+
+- shell script for php
+    - lookup `$*` or find something that passes all arguments into script  
+        - $@ is your huckleberry
+        ```
+        #!/usr/bin/env sh
+        php "$@"
+        echo "\nDo you want to reset this terminal?"
+        select yn in "Yes" "No"; do
+            case $yn in
+                Yes ) reset; break;;
+                No ) break;;
+            esac
+        done
+        ```
+- `php -r 'print_r($argv);'`
+- bash variables and other good bash stuff: <http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html#table_03_01>
+- bash tutorial: <http://www.hypexr.org/bash_tutorial.php>
+- cheaters: <http://ttscoff.github.io/cheaters/cheat.html>
+<br>
+- a good quote, quotation app
+    - like the one in the app store but additionally:
+    - cross-platorm
+    - cloud-based
+    - quote-of-the-day functionality
+    - social
+        - sharing with others
+        - voting up|down
+        - subscribe to other qotds
+        - publish your qotd or keep it prviate
+        - tag quotes or lists of quotes as shared or private
+    
+#### Previously
+
+- sudo periodic daily weekly monthly
+- use sudo opensnoop -vp PID #or without PID to everything
+- learning by visualizing, pattern-recognition, using tools not-quite invented, e.g. Light Table
+- Bret Victor’s site - <http://worrydream.com/>
+
+#### Other App Ideas:
+
+1. A Timer app like Timer with big pre-sets, but allow for MULTIPLE simultaneous timers
+1. A Weather app that parses histoical data looking for trends
+    - Temp, air pressure, winds: speed & direction, percipitation, dew-point
+    - Mean w/std and variance
+    - Mode
+    - Median
+1. Prioritizer: present a list of user-entered choices and use better-or-worse results from pairings
+1. GUI for tree
+1. Log pianobar music, markdown'd to file open in makred
+1. change everwatch.rb to accept  watch file from the command line so that 2 notes can be watched
+
+#### TOAD'Os
+
+- @done key-chord for save in insert mode -- `ww`
+- figure out indent problem in markdown mode -- disrespecting tab-width
+    - what's up with node files not getting colored until buffer is reverted?
+    - markdown mode will at least allow to double-tab to 4
+    - consider modifying `tab-stop-list` for `M-i`
+
+* * *
+
+###### __The Dragon__ has *awoken*
+
+#### Emacsy Things
+
+- getting dates in any buffer <2013-05-06 Mon> 
+    - use: `org-time-stamp` or `org-time-stamp-inactive`
+- @done add underscore to pre blocks in css, via class?
+    - better to integrate boxes as in *github.css*
+- integrate markdown files such as this in org-mode
+    - check out file links
+```
+    #+begin_src markdown
+    #+end_src
+```
+- When inside the source block (between #+begin_src markdown and #+end_src) press `C-c '` to edit the source block with markdown-mode.
+
+- `M-up|down` for changing levels
+- `C-c C--|=` for changing levels
+- ack from emacs please
+- fasd -- cool cd and other stuff: <https://github.com/clvv/fasd>
+    - found from: <https://github.com/revans/bash-it> via <http://dotfiles.github.io>
+- wow, evernote-mode for emacs, avail as a package
+    - <https://code.google.com/p/emacs-evernote-mode/>
+- @done (setq scroll-preserve-screen-position 1) ;;always -- added to custom.el
+- @done fix C-v in insert move -- shoudn't scroll down a page
+- look at going back to always scroll-mode like in vim
+    - using smooth-scrolling.el but maybe, works great if smooth-scroll-window is nearly eq to 1/2 screen lines; have mine at 13, which is about half of half-size window
+    - smooth-scroll would be better?
+- fix auto-save directory
+- how are swank and slime related?
+- reorganize `.emacs.d` files, using prelude or wiegley or magnars as a template (pick one and go with it)
+- don't forget this if you want a larger font; custom.el is now 12 with 60x113 frame size; for 13pt, do this:
+    - `(set-face-attribute (quote default) nil :font "DejaVu Sans Mono-13")`
+    - `'(default-frame-alist (quote ((height . 52) (width . 110))))`
+    - use customize-group default-frame-alist or modify custom.el directly
+
+#### JavaScripty Things
+
+- finish learning a js framework, (pick one and go with it)
+    - organize this list by browser/server/both *(move it to org and use :tags)*
+    - angular
+    - ember
+    - backbone
+        - marionette
+        - chaplin
+    - meteor
+    - zappa
+    - zest.js http://zestjs.org/why-zest
+    - yeoman -- WHY YEOMAN?
+>Yeoman is a robust and opinionated client-side stack, comprising tools and frameworks that can help developers quickly build beautiful web applications. We take care of providing everything needed to get started without any of the normal headaches associated with a manual setup.
+
+* * *
+
+#### ILF [ilf]
+
+>Accounting Dept
+Interactive Life Forms
+7000 Burleson Rd, Bldg
+Austin, TX 78744
+
+* for @kevin
+    - Yii: <http://www.yiiframework.com/>
+    - [vagrant]
+* @done see about geting phpstorm to replace webstorm
+* <https://github.com/josegonzalez/homebrew-php> php 5.2.17
+* <http://coolestguyplanettech.com/downtown/install-and-configure-apache-mysql-php-and-phpmyadmin-osx-108-mountain-lion>
+
+* * *
+
+* mysql install
+```
+==> /usr/local/Cellar/mysql/5.6.10/bin/mysql_install_db --verbose --user=anand --basedir=/usr/local/Cel
+==> Caveats
+A "/etc/my.cnf" from another install may interfere with a Homebrew-built
+server starting up correctly.
+
+To connect:
+    mysql -uroot
+
+To have launchd start mysql at login:
+    ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+Then to load mysql now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+Or, if you don't want/need launchctl, you can just run:
+    mysql.server start
+Change root password:
+    /usr/local/mysql/bin/mysqladmin -u root password 'yourpasswordhere'
+```
+* php 5.2.17 install
+```
+==> ./configure --prefix=/usr/local/Cellar/php52/5.2.17 --localstatedir=/usr/local/var --sysconfdir=/us
+==> make
+==> make install
+==> Caveats
+To enable PHP in Apache add the following to httpd.conf and restart Apache:
+    LoadModule php5_module    /usr/local/opt/php52/libexec/apache2/libphp5.so
+
+The php.ini file can be found in:
+    /usr/local/etc/php/5.2/php.ini
+
+✩✩✩✩ PEAR ✩✩✩✩
+
+If PEAR complains about permissions, 'fix' the default PEAR permissions and config:
+    chmod -R ug+w /usr/local/Cellar/php52/5.2.17/lib/php
+    pear config-set php_ini /usr/local/etc/php/5.2/php.ini
+
+✩✩✩✩ Extensions ✩✩✩✩
+
+If you are having issues with custom extension compiling, ensure that this php is
+in your PATH:
+    PATH="$(brew --prefix josegonzalez/php/php52)/bin:$PATH"
+
+PHP52 Extensions will always be compiled against this PHP. Please install them
+using --without-homebrew-php to enable compiling against system PHP.
+==> Summary
+🍺  /usr/local/Cellar/php52/5.2.17: 444 files, 20M, built in 11.7 minutes
+```
+
+#### Vagrant [vagrant]
+
+- <http://www.vagrantup.com/>
+- <http://docs.vagrantup.com/v2/getting-started/>
+```
+    $ vagrant box add base http://files.vagrantup.com/lucid32.box
+    $ vagrant init
+    $ vagrant up
+```
+* * *
+
+#### Php Stuff
+
+* <http://stackoverflow.com/questions/576908/how-to-create-a-simple-hello-world-module-in-magento>
+* create the same functionality above in angular or node or pure php
+* how-to do routers in php -- look for some tutorials
+* reactphp <http://reactphp.org>
+* node-php <https://github.com/davidcoallier/node-php> nvm, 2 years stale
+* fpm(php executable) for php install
+* see [ilf]
+
+* * *
+
+* check bash setting for line wrap
+* bash command: reset for fouled up terminals!!!
+* @markdown see about redoing blockquote css to the the effect below w/o multiple > and br
+
+#### Done'ers, Those That are Done
+
+- consider using Mac app: Marked, including Evernote integration@done(2012-06-24)
+- looks like editing in vim then copy/pasting the Marked preview into Evernote is the way to go@done(2012-06-24)
+- get dotfiles organized and uploaded to git@done(2012-06-21)
+
+* * *
+
+>Julios.com wp:
+>>[Link](www.julios.com/wp-login.php? "/wp-login.php?")
+>>rickfox
+>>tonyshaw56
