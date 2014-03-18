@@ -1,13 +1,0 @@
-;;; litable-autoloads.el --- automatically extracted autoloads
-;;
-;;; Code:
-
-
-(provide 'litable-autoloads)
-;; Local Variables:
-;; version-control: never
-;; no-byte-compile: t
-;; no-update-autoloads: t
-;; coding: utf-8
-;; End:
-;;; litable-autoloads.el ends here

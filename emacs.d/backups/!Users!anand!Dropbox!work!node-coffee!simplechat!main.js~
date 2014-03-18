@@ -1,6 +1,0 @@
-var http = require("http"),
-    fs = require("fs");
-
-var app = http.createServer(function (request, response) {
-}).listen(1337);
-

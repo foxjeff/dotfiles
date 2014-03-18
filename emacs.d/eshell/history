@@ -1,128 +1,128 @@
+cat arf
 alias
-unalias -a ff1o
+alias catfoo cat $1 > #<buffer foo>
 alias
-cat ~/.emacs.d/eshell/alias 
-ffo ~/.emacs.d/eshell/alias
+alias catfoo 'cat $1 > #<buffer foo>'
 alias
-exit
-alias
-echo $PATH
 ls
-ls ..
-addpath --help
-addpath -b /usr/local/bin
-echo $PATH
-node
+cat test.md
+catfoo  test.md
+catfoo  list.md
+find /Users/anand/.emacs.d/ -name "org-compat.el" -print
+find /Users/anand/.emacs.d/ -name "org-compat.el" -print > #<buffer foo>
+find /Users/anand/.emacs.d/ -name "org-compat.el" -print -exec catfoo {} \;
+find /Users/anand/.emacs.d/ -name "org-compat.el" -print -exec cat {} \;
+find /Users/anand/.emacs.d/ -name "org-compat.el" -print -exec cat {} > #<buffer foo> \;
+which cat
+which man
+which less
+which more
+which view
+describe-function find-dired
+find-dired /Users/anand/.emacs.d/ "org-compat.el"
+find-dired /Users/anand/.emacs.d/ -name "org-compat.el"
+find-dired /Users/anand/.emacs.d/ "org-compat.el"
+find-dired /Users/anand/.emacs.d/ ("org-compat.el")
+find-dired /Users/anand/.emacs.d/ '("org-compat.el)'
+find-dired /Users/anand/.emacs.d/ (org-compat.el)
+find-dired /Users/anand/.emacs.d/ (org-compat.el)
+find-dired /Users/anand/.emacs.d/ org-compat.el
+find-dired /Users/anand/.emacs.d/ 'org-compat.el'
+find-dired /Users/anand/.emacs.d/ "org-compat.el"
+find
+which find
+find -f ~/.emacs.d/ org-comapt.el
+ls
+find -f . notes
+find -f . notes.org
+find-dired . notes.org
+find-dired -f . notes.org
+find
+find-dired (. notes.org)
+find-name-dired -f . notes.org
+find-name-dired . notes.org
+find-name-dired  ~/.emacs.d/ org-comapt.el
+find-name-dired  ~/.emacs.d/ org-compat.el
+find-name-dired  ~/.emacs.d/ org-com*.el
+find-name-dired  . arf
+find-name-dired  . arf*
+find-name-dired  . arf.*
+find-name-dired  . "arf"
+find-name-dired  . "arf.*"
+find -f ~/.emacs.d/ "*bullet*"
+find-name-dired  . "*bullet*"
+find-name-dired  ~/.emacs.d/ "*bullet*"
+alias
+do .
+find-dired /Users/anand/.emacs.d/ org-compat.el
+find-dired -f . notes.org
+find-dired . notes.org
+which find-file
+find-file arf "*"
+find-file arf ".*"
+find-file
+find-file arf ".html"
+find-file arf ".html" asfd
+alias
+ffo arf.rb
+ffo ~/.emacs.d/elpa/xkcd-readme.txt 
+date
+which date
+which cal
 which ls
-which ff
-eshell-path-env
-echo eshell-path-env
-addpath
-'eshell-visual-commands'
-top
-node
-export PS1='\[\e[1;34m\]\W \[\e[1;35m\](\j)➙ \[\e[0m\]'
-PS1
-echo $PS1
-PS1='\[\e[1;34m\]\W \[\e[1;35m\](\j)➙ \[\e[0m\]'
-define 
-alias node 'NODE_NO_READLINE=1 node'
-node
-node
-ffo ~/.emacs.d/eshell/login
-exit
-addpath
-node 
+which cat
+cat
+grep "gruber" ../../dotfiles/
+grep "gruber" ../../dotfiles/*
+grep -r "gruber" ../../dotfiles/*
+grep -r "elpa" ../../dotfiles/*
+grep "clone.*magnar" /Users/anand/.bash_history-saved
+grep
+grep --color-all "clone.*magnar" /Users/anand/.bash_history-saved
+grep --color "clone.*magnar" /Users/anand/.bash_history-saved
+grep --color=all "clone.*magnar" /Users/anand/.bash_history-saved
+which grep
+grep
+grep --color=always "clone.*magnar" /Users/anand/.bash_history-saved
+which ack
+view-file
 ls
-ls ..
-setenv --help
-export NODE_PATH='/usr/local/share/npm/lib/node_modules' #for -g node modules
-echo $NODE_PATH/
-echo $NODE_PATH
-getenv NODE_PATH
-setenv FOO 'bar'
-echo $FOO
-(set-face-attribute 'eshell-prompt nil :foreground "turquoise1")
-(set-face-attribute 'eshell-prompt nil :foreground "orange")
-(format-time-string "%c" (current-time))
-history --help
-which history
-history -a
-ls
-d
+view-file history 
 alias
-alias d  'dired .'
-d
-alias do  'dired-other-window $1'
-do
-do ~/Dropbox/work/
-exit
+view-file-other-window bookmarks 
+alias v view-file $1
+v eink-theme.el 
+alias v 'view-file $1'
+v eink-theme.el 
+alias vo 'view-file-other-window $1'
+vo eink-theme.el 
+popd
+cd =
+man cd
+man bash
+cd
+cd =
+cd -2
 ls
-cd Dropbox/work/
-ls
-exit
-d
-ls
-alias
-node
-exit
-echo $PATH
-echo eshell-path-env
-eshell-path-env
-d
-exit
-ls
-cd ~/Dropbox/work/
-ls
-ls node-coffee/
-echo $LSCOLORS 
-alias
-ff ~/.bashrc
-setenv --help
-setenv FOO 'bar'
-echo $FOO
-setenv FOO
-echo $FOO
-echo $FOO=$LSCOLORS 
-echo $FOO
-echo FOO=$LSCOLORS 
-echo $FOO
-FOO
-echo FOO
-echo $FOO
-setenv FOO $LSCOLORS 
-echo $FOO
-setenv LSCOLORS
-echo $LSCOLORS 
-ls
-ls node-coffee/
-setenv LSCOLORS Fx
-ls
-setenv LSCOLORS Fx
-ls node-coffee/
-alias
-ls --color=none node-coffee/
-dircolors 
-ls node-coffee/
-dircolors -b
-dircolors -p
-ls node-coffee/
-setenv LS_COLORS
-echo $LSCOLORS 
-echo $LS_COLORS
-setenv LSCOLORS
-ls node-coffee/
-getenv NODE_PATH
-getenv LSCOLORS
-.mp3 00;36
-echo $LS_COLORS
-ls node-coffee/
-ls --color=none node-coffee/
-ls --color=none node-coffee/bb-tasks/
-ls -R --color=none node-coffee/bb-tasks/
-node-coffee/bb-tasks/:
-ls node-coffee/
-echo $LS_COLORS
-echo $LSCOLORS
-ls Watchers/
-exit
+vo main.js 
++ 1 23 3
+map (+1) (1 2 3)
+mapcar (+1) (1 2 3)
+map (+ 1) (1 2 3)
+mapcar (+ 1) (1 2 3)
+mapcar (+) (1 2 3)
++1
++ 1
+mapcar (lambda (n) (+ 1 n)) (1 2 3)
+(lambda (x) (+ 1 x))
+((lambda (x) (+ 1 x)) 23)
+(mapcar (lambda (x) (+ 1 x)) (1 2 3))
+(mapcar (lambda (x) (+ 1 x)) '(1 2 3))
+((lambda (x) (+ 1 x)) 23)
+(mapcar (lambda (n) (+ 1 n)) '(1 2 3))
+(mapcar (+) '(1 2 3))
+(mapcar '+ '(1 2 3))
+(mapcar '(+1) '(1 2 3))
+(mapcar '(+ 1) '(1 2 3))
+(mapcar (+ 1) '(1 2 3))
+(mapcar (lambda (n) (+ 1 n)) '(1 2 3))

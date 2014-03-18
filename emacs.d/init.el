@@ -38,6 +38,7 @@
 (autoload 'dash-at-point "dash-at-point"
              "Search the word at point with Dash." t nil)
 (global-set-key "\C-cd" 'dash-at-point)
+;;(add-to-list 'dash-at-point-mode-alist '(haskell-mode . "haskell"))
 
 ;; from magnar's http://whattheemacsd.com/setup-ido.el-02.html
 (add-hook 'ido-setup-hook
@@ -55,8 +56,8 @@
 ;; unless package-initialize is called during init
 (add-hook 'after-init-hook
           #'(lambda ()
-                         ;(when (not package-archive-contents) ;; only called during a fresh install
-                         ;   (package-refresh-contents))
+              ;(when (not package-archive-contents) ;; only called during a fresh install
+              ;   (package-refresh-contents))
               (require 'smooth-scrolling)
               ;;(require 'js2-mode)
               ;; JavaScript
@@ -71,7 +72,7 @@
               (font-lock-add-keywords
                'js2-mode `(("function *([^)]*) *{ *\\(return\\) "
                             (0 (progn (compose-region (match-beginning 1)
-                                                      (match-end 1) "\u2190")
+                                                      (match-end 1) "\u2192")
                                       nil)))))
               (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
               (add-to-list 'auto-mode-alist '("\\.json$" . javascript-mode))
@@ -83,8 +84,9 @@
 
               ;; pure evil!
               (require 'evil)
-              (evil-mode 1)
               (require 'evil-leader)
+              (global-evil-leader-mode)
+              (evil-mode 1)
               (evil-leader/set-key
                 "e" 'ido-find-file
                 "f" 'ido-find-file
@@ -95,6 +97,7 @@
                 "x" 'ido-display-buffer
                 "o" 'evil-window-prev
                 "p" 'mode-line-other-buffer  ;evil-buffer
+                "c" 'evilnc-comment-or-uncomment-lines
                 )
               ;; get rid of the default so leader works in all modes
               ;; in <E> mode, use C-\
@@ -120,17 +123,49 @@
               (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
               (key-chord-define evil-insert-state-map "ww" 'save-buffer)
               (key-chord-define evil-insert-state-map "uu" 'undo-tree-undo)
+
+              (evil-leader-mode)
+
+              ;; web-mode
+              ;; also, keyword-face is changed in custom.el
+              (require 'web-mode)
+              (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+              (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
+
+              ;; themes -- color
+              ;; (load-theme 'whiteboard2 t)
+              ;; (load-theme 'gruber-darker t)
+              ;; (load-theme 'afternoon t)
+              ;; (load-theme 'ample-light t)
+              ;;(load-theme 'solarized-light t)
+              ;; (load-theme 'mesa t)
+              (load-theme 'eink t)
+              ;; (menu-bar-mode -1)
+
+              (require 'ido-vertical-mode)
+              (require 'ido-ubiquitous)
+              ;; turn ido-mode on: ido-??? set in custom
+              (ido-mode 1)
+              (ido-vertical-mode 1)
+              (ido-ubiquitous-mode)
+
+              (smex-initialize)
+              (global-set-key (kbd "M-x") 'smex)
+              (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+              ;; This is your old M-x.
+              (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+              ;; added to custom -- not so much
+              (set-face-attribute 'default nil :font "DejaVu Sans Mono-13")
+
+              ;; smart-mode-line
+              (setq sml/theme 'dark)
+              (require 'smart-mode-line)
+              (sml/setup)
               ))
 
 ;; C-h inside of searching
 (define-key isearch-mode-map [(control h)] 'isearch-mode-help)
-
-;(eval-after-load 'js2-mode
-;; Use lambda for anonymous functions
-;)
-
-;; themes -- color
-(load-theme 'whiteboard2 t)
 
 ;; jump-to-mark
 ;;
@@ -143,15 +178,12 @@ This is the same as using \\[set-mark-command] with the prefix argument."
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; turn ido-mode on: ido-??? set in custom
-(ido-mode 1)
-
 ;; org-mode templates
 (setq org-capture-templates
       '(("n" "New Note" item (file "~/Dropbox/work/org-mode/new-notes.org")
-             "- %?  %U\n %i\n %a")
-				("t" "Todo" entry (file+headline "~/Dropbox/work/org-mode/new-notes.org" "Tasks")
-             "* TODO %?\n  %i\n  %a")))
+         "- %?  %U\n %i\n %a")
+        ("t" "Todo" entry (file+headline "~/Dropbox/work/org-mode/new-notes.org" "Tasks")
+         "* TODO %?\n  %i\n  %a")))
 
 ;; org-mode capture
 (global-set-key (kbd "C-c c") 'org-capture)
@@ -226,8 +258,8 @@ This is the same as using \\[set-mark-command] with the prefix argument."
 ;;(setq-default dired-details-hidden-string "--- ")
 ;;(dired-details-install)
 
-;; added to custom
-;;(set-face-attribute 'default nil :font "DejaVu Sans Mono-12")
+;; added to custom -- not so much
+;;(set-face-attribute 'default nil :font "DejaVu Sans Mono-13")
 
 ;; never use these
 ;(global-set-key (kbd "<f1>") '(lambda () (interactive) (ido-switch-buffer)))

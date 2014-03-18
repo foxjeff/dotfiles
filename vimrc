@@ -76,10 +76,6 @@ let g:miniBufExplSplitBelow = 1
 "paredit - no shortmaps, changes J and O among other things
 let g:paredit_shortmaps=0
 
-"command-t stuff
-let g:CommandTMaxHeight = 10
-nmap <F6> :CommandT<cr>
-
 "line numbering toggle from:
 "http://superuser.com/questions/339593/vim-toggle-number-with-relativenumber
 noremap <silent><F7> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
@@ -132,8 +128,8 @@ nmap <C-K> <C-W>k
 nmap <TAB> <C-W>w
 nmap j gj
 nmap k gk
-nmap t o<ESC>k 
-nmap T O<ESC>j 
+"nmap t o<ESC>k 
+"nmap T O<ESC>j 
 "
 map <silent> <leader>f :WinFullScreen<cr>
 
@@ -154,6 +150,7 @@ runtime ftplugin/man.vim
 set statusline=%<%f\ %m\ %y\ %r\ \ %=%l\ of\ %L,%c%V\ %p%%
 
 "highlight stuff
+:hi Normal ctermbg=233
 "hi CursorLine cterm=none ctermbg=234
 "hi Visual ctermfg=black ctermbg=white
 "hi StatusLine  cterm=bold ctermfg=White ctermbg=235 "was 239
