@@ -17,6 +17,7 @@ export HISTCONTROL=erasedups
 export CDPATH='.:~:~/Dropbox:/usr/local'
 #for glances:
 export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
+export EDITOR='emacsclient -nw'
 
 #for less -- fancy status line
 export LESS='-P%f (%i/%m) Line %lt/%L'
@@ -59,5 +60,8 @@ bind -f ~/.inputrc
 
 export TERM="xterm-256color"
 
+#jarvis2
+#https://github.com/mallochine/jarvis2.git
+. ~/.jrc
 
 # vim:ts=4:sw=4

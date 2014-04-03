@@ -1,60 +1,3 @@
-cat arf
-alias
-alias catfoo cat $1 > #<buffer foo>
-alias
-alias catfoo 'cat $1 > #<buffer foo>'
-alias
-ls
-cat test.md
-catfoo  test.md
-catfoo  list.md
-find /Users/anand/.emacs.d/ -name "org-compat.el" -print
-find /Users/anand/.emacs.d/ -name "org-compat.el" -print > #<buffer foo>
-find /Users/anand/.emacs.d/ -name "org-compat.el" -print -exec catfoo {} \;
-find /Users/anand/.emacs.d/ -name "org-compat.el" -print -exec cat {} \;
-find /Users/anand/.emacs.d/ -name "org-compat.el" -print -exec cat {} > #<buffer foo> \;
-which cat
-which man
-which less
-which more
-which view
-describe-function find-dired
-find-dired /Users/anand/.emacs.d/ "org-compat.el"
-find-dired /Users/anand/.emacs.d/ -name "org-compat.el"
-find-dired /Users/anand/.emacs.d/ "org-compat.el"
-find-dired /Users/anand/.emacs.d/ ("org-compat.el")
-find-dired /Users/anand/.emacs.d/ '("org-compat.el)'
-find-dired /Users/anand/.emacs.d/ (org-compat.el)
-find-dired /Users/anand/.emacs.d/ (org-compat.el)
-find-dired /Users/anand/.emacs.d/ org-compat.el
-find-dired /Users/anand/.emacs.d/ 'org-compat.el'
-find-dired /Users/anand/.emacs.d/ "org-compat.el"
-find
-which find
-find -f ~/.emacs.d/ org-comapt.el
-ls
-find -f . notes
-find -f . notes.org
-find-dired . notes.org
-find-dired -f . notes.org
-find
-find-dired (. notes.org)
-find-name-dired -f . notes.org
-find-name-dired . notes.org
-find-name-dired  ~/.emacs.d/ org-comapt.el
-find-name-dired  ~/.emacs.d/ org-compat.el
-find-name-dired  ~/.emacs.d/ org-com*.el
-find-name-dired  . arf
-find-name-dired  . arf*
-find-name-dired  . arf.*
-find-name-dired  . "arf"
-find-name-dired  . "arf.*"
-find -f ~/.emacs.d/ "*bullet*"
-find-name-dired  . "*bullet*"
-find-name-dired  ~/.emacs.d/ "*bullet*"
-alias
-do .
-find-dired /Users/anand/.emacs.d/ org-compat.el
 find-dired -f . notes.org
 find-dired . notes.org
 which find-file
@@ -126,3 +69,60 @@ mapcar (lambda (n) (+ 1 n)) (1 2 3)
 (mapcar '(+ 1) '(1 2 3))
 (mapcar (+ 1) '(1 2 3))
 (mapcar (lambda (n) (+ 1 n)) '(1 2 3))
+ls
+alias
+v index.js 
+frame-parameters
+node
+node .
+cd ..
+node hello-world/
+cd ..
+node examples/hello-world/
+which node
+/usr/local/bin/node examples/hello-world/
+ls examples/
+/usr/local/bin/node examples/mvc/
+do examples/mvc/
+do examples/mvc/
+ls examples/mvc/
+ls examples/mvc/views/
+ls examples/mvc/controllers/
+v examples/mvc/controllers/main/index.js 
+do examples/mvc/
+/usr/local/bin/node examples/mvc/
+npm info express
+clear 
+reset
+ls
+v package.json 
+ls -a examples/hello-world/
+v examples/hello-world/index.js 
+ls
+v examples/hello-world/index.js 
+v package.json 
+ls lib/
+node
+v examples/hello-world/index.js 
+v examples/hello-world/index.js 
+lotr ~/.emacs.d/my-stuff/js2-mode.elc 
+ls -otrh ~/.emacs.d/my-stuff/js2-mode.elc 
+ls -otrh ~/.emacs.d/my-stuff/js2-mode.el
+ls -otrh ~/.emacs.d/my-stuff/
+v ~/.emacs.d/elpa/js2-mode-readme.txt 
+ls -otrh ~/.emacs.d/elpa/js2*
+v ~/.emacs.d/my-stuff/js2-mode.elc 
+meteor --help
+meteor --version
+which meteor
+brew info meteor
+cd ../mytodo/
+mkdir app
+mkdir app/api
+ff app/api/data.json
+ff app/scripts/app.js 
+v app/scripts/foo.js
+v app/scripts/controllers/main.js
+v app/views/main.html 
+ff app/scripts/controllers/main.js
+exit

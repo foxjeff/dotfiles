@@ -1,4 +1,4 @@
-;; init.el
+
 ;;
 ;; 16-mar-2013 in the customize ns group, changed command to be meta and alt to be control
 ;; 11-apr-2013 clean up
@@ -86,7 +86,7 @@
               (require 'evil)
               (require 'evil-leader)
               (global-evil-leader-mode)
-              (evil-mode 1)
+              (evil-mode -1)
               (evil-leader/set-key
                 "e" 'ido-find-file
                 "f" 'ido-find-file
@@ -139,7 +139,7 @@
               ;; (load-theme 'ample-light t)
               ;;(load-theme 'solarized-light t)
               ;; (load-theme 'mesa t)
-              (load-theme 'eink t)
+              ;;(load-theme 'eink t)
               ;; (menu-bar-mode -1)
 
               (require 'ido-vertical-mode)
