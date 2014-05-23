@@ -1,0 +1,43 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/anand/Dropbox/Projects/" . "weather/")
+ ("/Users/anand/Dropbox/" . "Projects/")
+ ("/Users/anand/Projects/" . "ITEWS-Simulator/")
+ ("/Users/anand/" . "Dropbox/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/anand/Dropbox/Projects/"
+ "/Users/anand/Projects/"
+ "/Users/anand/Dropbox/Projects/weather/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "notes-from-imac.md"
+ "my-markdown-preview.el"
+ "notes-to-myself.md"
+ "index.html"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/anand/Dropbox/Projects/" (21330 46433 0 0) "weather/" "tea-smith.md" "stylistics/" "starter-kit-save/" "starter-kit-1.4.0/" "square-root.md" "scratch/" "sails-info.md" "notes-to-myself.md" "notes-to-myself.html" "mumblr01/" "mumblr.wiki-save/" "mumblr.wiki/" "misc-githubs/" "michael-letter.md" "michael-letter.html" "kevin-chat.txt" "index.html" "git-notes.md" "further-notes.md" "fizzy/" "Ember-Too/" "cyber-coders-reggie.md" "cover-letters.md" "AngularFun/" "angular-express-seed/" "AngTest-2/" "AngTest/" ".DS_Store" "../" "./")
+
+ ("/Users/anand/Dropbox/" (21332 19294 0 0) "zsh-refcard.pdf" "zold-unwanted/" "Your Profile | LinkedIn.pdf" "Yojimbo/" "xcode/" "Write/" "worksheet.html" "work/" "wizards_game.lisp" "webstorm-settings4.jar" "WeatherIcons/" "VP5Guide.pdf" "vimrc-mitsuhiko" "vim-sheet.png" "use.beam" "up-and-running-with-node-preview.pdf" "the-war-of-art_fastpencil.pdf" "subscriptions0625013.opml" "subscriptions.opml" "Stuff-Goes-Here/" "Steven Wright Quotes.webarchive" "squashed-dot.ghci" "Smooth CoffeeScript Web Optimized.pdf" "Smart_Things-Chapter_6.pdf" "sicp.epub" "ShivasutrasLakshmanJoo.pdf" "shiva_3.jpg" "Safari Bookmarks.html" "RIKJS Museum/" "RichHickey_TheClojureConcurrencyStory.pdf" "ResearchToolbox.pdf" "research/" "rc.pdf" "random.qtz" "rama.jpg" "racket-macros.pdf" "quicklisp.lisp" "Public/" "Proposal_for_NJHS.pdf" "Projects/" "Programming Ruby 1.92.pdf" "Programming Ruby 1.9.pdf" "ppmx.lisp" "php-samples.zip" "Photos/" "PhilScience.pdf" "pdfs/" "PatternsOfSoftware.pdf" "orgguide.pdf" "orgcard.pdf" "org.tynsoe.geektool3.plist" "org.tynsoe.geektool.prefpane.plist" "org.tynsoe.geeklet.shell.plist" "org.tynsoe.geeklet.image.plist" "org.pdf" "oof.htnl" "oof.html" "onlisp.pdf" "oldprojects/" "notesy/" "notes.md" "notes-for-a-day.textile" "Notational Data/" "nodejs.pdf" "nodejs-webworker-design.html" "Myth of Object-Orientation.pdf" "My Notes.enex" "my chart.pdf" "my chart-table.pdf" "multimode_adhoc_capabilities.pdf" "mockrolesnotobjects.pdf" "Mine2.itermcolors" "mastermind-ruby.pdf" "maps for tanks | a walkthrough resource for tanks and tanking in world of warcraft.pdf" "Lisp08.pdf" "Lisp.pdf" "Lisp Machines - MIT.pdf" "life at the ashtram" "Lecture 14.pdf" "Lecture 13.pdf" "Lecture 12.pdf" "LearnPythonTheHardWay.pdf" "LandOfLisp08.pdf" "Jyotish PDFs, etc./" "jeff-head.png" "jeff-head-small.png" "jeeves.htm" "j.vim" "iPhone intro.pdf" "iPad intro.pdf" "iOS Programming-Hillegass,Chapter3.pdf" "IntelliJ.keylayout" "IntelliJ.icns" "imac-dotfiles/" "imac-configs/" "Icon
+" "Horary Class/" "honeycomb-metal-mesh-grid.jpg" "haskell-98-tutorial.pdf" "Haskell Wikibook.pdf" "grids_are_good.pdf" "GOOSGbT.pdf" "Git Notes.html" "getting_started-erlang.pdf" "Getting Started.pdf" "Game Programming Book.pdf" "fp-oo-sample.pdf" "foxjeff/" "foo.md" "foo.lisp" "FocusFree.pdf" "FiveElementsCycleBalanceImbalance.jpg" "Five Element TCM, 2.pdf" "emacs.pdf" "emacs-todo.html" "emacs-lisp-intro.pdf" "Eloquent JavaScript.pdf" "dotfiles-mbp/" "dotfiles/" "Dhammapada.pdf" "designwithintent_cards_1.0.pdf" "Designing_the_iPhone_User_Experience_Chapter7.pdf" "daume02yaht.pdf" "coursepuremath00hardrich.pdf" "Cooking_for_Geeks.pdf" "Conversations_3(4).pdf" "Conversations_2(2).pdf" "Conversations_1(5).pdf" "connectionmachinelisp.pdf" "CommonLisp:AGentleIntro.pdf" "CoffeeMaker.pdf" "Cocoa Programming-Hillegass,Chapter3.pdf" "Categories.pdf" "capability-notes.textile" "Capability-Bases-Computer-Systems-Chapter1.pdf" "calc4.rb" "calc3.rb" "calc1.rb" "calc0.rb" "build-a-javascript-framework.pdf" "btt-setup" "bestoption/" "Azurah/" "AUM.graffle.pdf" "Art Resources/" "Arduino.pdf" "Aquarium_RubyAOP.pdf" "app.pub" "AOP_in_Ruby.pdf" "A Visual, Intuitive Guide to Imaginary Numbers | BetterExplained.webarchive" "50 writing tips.pdf" "1APPRENTICE.pdf" "01 - Hello, World.qtz" ".DS_Store" ".dropbox.cache/" " Patanjali's Yoga Sutras, Book III, Supernormal Powers.pdf" "../" "./")
+
+ ("/Users/anand/" (21332 28157 0 0) "work/" "Sites/" "Public/" "Projects/" "PlayOnMac's virtual drives/" "Pictures/" "my-irb-hist" "Music/" "Movies/" "Library/" "irbrc-safe" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Calibre Library/" "bash_history" "Applications/" ".zshrc" ".zsh/" ".zhistory" ".zcompdump" ".Xcode/" ".Xauthority" ".vimrc-old" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".tcshrc" ".subversion/" ".sqlite_history" ".smex-items" ".shoes/" ".screenrc" ".rvmrc" ".rvm/" ".rnd" ".profile" ".my-irb-hist" ".moneydance/" ".macports/" ".MacOSX/" ".local/" ".lesshst" ".jhistory" ".irbrc" ".irb_history" ".irb-history" ".InstallAnywhere/" ".inputrc" ".history" ".gvimrc-old" ".gvimrc" ".gitconfig" ".ghci" ".gdb_history" ".fossil" ".fonts.cache-1" ".fonts/" ".fontconfig/" ".emacs.d/" ".editrc" ".dvdcss/" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".calibre_calibre GUI.lock" ".cache/" ".bashrc" ".bash_profile" ".bash_history" ".arf" ".aliases" "../" "./")
+
+ ("/Users/anand/Projects/" (21329 42082 0 0) "test1.sql" "Test/" "tags" "SwissEphe/" "scratch/" "RadianceReminderCococa/" "RadianceReminder/" "PlanetAceServer/" "OldAstrology/" "my-markdown-preview.el" "logic_engine/" "JavaTest/" "ITEWS-Simulator/" "IMacAstrology/" "Horary Class/" "gits/" "Eclipse/" "DiskCacheInspector/" "CronniX/" "bowling/" "Astrology/" "ARL/" ".DS_Store" "../" "./")
+
+ ("/Users/anand/Dropbox/Projects/weather/" (21329 14480 0 0) "weatherfoo.js" "weather?q=London" "weather.min.js" "weather.js" "weather.css" "testangular.html" "test2.js" "test/" "tags" "ta.js" "src/" "scripts/" "README.md" "README.html" "package.json" "notes-to-myself.md" "node_modules/" "Makefile" "LICENSE" "lib/" "index.html.bak" "index.html" "bower.json-save" "bower.json" "another-index.html" ".zedstate" ".travis.yml" ".idea/" ".gitignore" ".git/" ".bowerrc" "#weather.js#" "../" "./")
+
+ ("/Users/anand/Projects/ITEWS-Simulator/" (17703 35943 0 0) "version.plist" "main.m" "ITEWS_Simulator_Prefix.pch" "ITEWS_Simulator_DataModel.xcdatamodel/" "ITEWS_Simulator_AppDelegate.m" "ITEWS_Simulator_AppDelegate.h" "ITEWS-Simulator.xcodeproj/" "Info.plist" "English.lproj/" "build/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
