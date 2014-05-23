@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("em"
+(("org-capture-last-stored"
+ (filename . "~/Projects/Notes/new-notes.org")
+ (front-context-string . "+ new stuff here")
+ (rear-context-string . "ser plugin]]\n+ \n")
+ (position . 20763))
+("em"
  (filename . "~/Dropbox/work/software-ideas-other.md")
  (front-context-string . "r\n- change face ")
  (rear-context-string . "lay in minibuffe")

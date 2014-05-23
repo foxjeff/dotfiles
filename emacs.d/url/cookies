@@ -2,9 +2,20 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- '(("marmalade-repo.org"
-  [url-cookie "connect.sid" "lMtv3HsJx5KLnJYtaRWqdJpC.T0X7Xs%2B5yDGFVw6ETiUvSb8TlHh2vhuYfBgmkwcBpcQ" "Thu, 27 Mar 2014 06:26:35 GMT" "/" "marmalade-repo.org" nil]
-  [url-cookie "httpOnly" nil "Thu, 27 Mar 2014 06:26:35 GMT" "/" "marmalade-repo.org" nil]))
+ '((".raganwald.com"
+  [url-cookie "__cfduid" "d57e634380abaadceb0979fa3ea7563331398740209668" "23-Dec-2019 23:50:00.00 GMT" "/" ".raganwald.com" nil]
+  [url-cookie "HttpOnly" nil "23-Dec-2019 23:50:00.00 GMT" "/" ".raganwald.com" nil])
+ ("www.anxiousmachine.com"
+  [url-cookie "ss_lastvisit" "1398741468583" "28-Apr-2017 03:17:48.00 GMT" "/" "www.anxiousmachine.com" nil]
+  [url-cookie "ss_cid" "17e2f100-f38f-44ab-86d9-2d5aaa6d11df" "28-Apr-2016 03:20:12.00 GMT" "/" "www.anxiousmachine.com" nil])
+ (".anxiousmachine.com"
+  [url-cookie "SS_MID" "b16ce270-4f97-442b-8de2-36b42fbc28eahukmk0in" "26-Apr-2024 03:17:48.00 GMT" "/" ".anxiousmachine.com" nil]
+  [url-cookie "ss_cid" "17e2f100-f38f-44ab-86d9-2d5aaa6d11df" "28-Apr-2016 03:17:48.00 GMT" "/" ".anxiousmachine.com" nil])
+ ("lambda-the-ultimate.org"
+  [url-cookie "PHPSESSID" "8470f9b6392b8b4d7061b4cb3242c161" "Thu, 22 May 2014 06:51:45 GMT" "/" "lambda-the-ultimate.org" nil])
+ ("marmalade-repo.org"
+  [url-cookie "connect.sid" "WlKRnJ5hg8gSIlaZj9an6zJ3.Yb4ClEdgWxsT4qytk540VDW5eMA6dD%2BILOwpS6M3yVU" "Thu, 15 May 2014 17:44:51 GMT" "/" "marmalade-repo.org" nil]
+  [url-cookie "httpOnly" nil "Thu, 15 May 2014 17:44:51 GMT" "/" "marmalade-repo.org" nil]))
 )
 (setq url-cookie-secure-storage
  'nil)

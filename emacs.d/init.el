@@ -134,7 +134,7 @@
 
               ;; themes -- color
               ;; (load-theme 'whiteboard2 t)
-              ;; (load-theme 'gruber-darker t)
+              (load-theme 'gruber-darker t)
               ;; (load-theme 'afternoon t)
               ;; (load-theme 'ample-light t)
               ;;(load-theme 'solarized-light t)
@@ -162,6 +162,9 @@
               (setq sml/theme 'dark)
               (require 'smart-mode-line)
               (sml/setup)
+              (add-to-list 'sml/replacer-regexp-list '("^~/Projects/" ":Proj:"))
+
+              (require 'my-setup)
               ))
 
 ;; C-h inside of searching

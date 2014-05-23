@@ -1,56 +1,3 @@
-find-dired -f . notes.org
-find-dired . notes.org
-which find-file
-find-file arf "*"
-find-file arf ".*"
-find-file
-find-file arf ".html"
-find-file arf ".html" asfd
-alias
-ffo arf.rb
-ffo ~/.emacs.d/elpa/xkcd-readme.txt 
-date
-which date
-which cal
-which ls
-which cat
-cat
-grep "gruber" ../../dotfiles/
-grep "gruber" ../../dotfiles/*
-grep -r "gruber" ../../dotfiles/*
-grep -r "elpa" ../../dotfiles/*
-grep "clone.*magnar" /Users/anand/.bash_history-saved
-grep
-grep --color-all "clone.*magnar" /Users/anand/.bash_history-saved
-grep --color "clone.*magnar" /Users/anand/.bash_history-saved
-grep --color=all "clone.*magnar" /Users/anand/.bash_history-saved
-which grep
-grep
-grep --color=always "clone.*magnar" /Users/anand/.bash_history-saved
-which ack
-view-file
-ls
-view-file history 
-alias
-view-file-other-window bookmarks 
-alias v view-file $1
-v eink-theme.el 
-alias v 'view-file $1'
-v eink-theme.el 
-alias vo 'view-file-other-window $1'
-vo eink-theme.el 
-popd
-cd =
-man cd
-man bash
-cd
-cd =
-cd -2
-ls
-vo main.js 
-+ 1 23 3
-map (+1) (1 2 3)
-mapcar (+1) (1 2 3)
 map (+ 1) (1 2 3)
 mapcar (+ 1) (1 2 3)
 mapcar (+) (1 2 3)
@@ -126,3 +73,56 @@ v app/scripts/controllers/main.js
 v app/views/main.html 
 ff app/scripts/controllers/main.js
 exit
+()
+ff
+alias
+eval (quote ())
+eval ()
+help
+$(1)
+$('())
+echo *
+echo *(:U)
+cwd
+pwd
+cd ~
+ls
+echo *
+echo
+echo \'()
+eval \'()
+eval 
+eval ()
+eval (1 2 3)
+eval (quote (1 2 3))
+eval (quote '(1 2 3))
+eval (cdr '(1 2 3))
+eval (cdr (quote '(1 2 3)))
+eval (cdr (quote (1 2 3)))
+cdr (1 2 3)
++ 1 2
+ls
+pwd
+which ls
+unalias ls
+/bin/ls
+/bin/ls
++ 1 2
++ 1 2
++ 1 22
+exit
+(read-from-minibuffer "yo: ")
+(defun greeting (from-name))
+(defun greeting (from-name))
+(greeting)
+(greeting "erpa")
+helloI am erpa and your derpa
+local-name
+(message "erpa")
+(message local-name)
+(message buffer-name)
+buffer-name
+buffer-face-mode 
+buffer-file-name
+buffer-name
+(buffer-face-mode -1)

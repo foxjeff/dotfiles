@@ -62,6 +62,19 @@ export TERM="xterm-256color"
 
 #jarvis2
 #https://github.com/mallochine/jarvis2.git
-. ~/.jrc
+#. ~/.jrc
+
+# Open argument in Dash
+
+#url encode the passed string
+urlenc () {
+	  echo -n "$@" | perl -pe's/([^-_.~A-Za-z0-9])/sprintf("%%%02X", ord($1))/seg'
+}
+function dash() {
+	open "dash://$(urlenc $@)"
+}
+function dman() {
+  open "dash://man:$(urlenc $@)"
+}
 
 # vim:ts=4:sw=4
