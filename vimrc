@@ -29,6 +29,7 @@ set t_Co=256
 set hls
 "timeoutlen is how long pressing <ESC> delays; default is 1000ms
 set timeoutlen=500
+let g:rainbow_active = 1
 
 "colorscheme stuff
 "let g:solarized_termcolors=256 "    |   16
@@ -81,7 +82,7 @@ let g:paredit_shortmaps=0
 noremap <silent><F7> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
 
 "for vimclojure
-let g:vimclojure#WantNailgun=1
+"let g:vimclojure#WantNailgun=1
 
 "vim-coffee-script
 let g:coffee_compile_on_save = 1
@@ -103,7 +104,9 @@ nmap <F3> :set hlsearch!<cr>
 imap <F3> <esc>:set hlsearch!<cr>a
 imap  <Del>
 imap jj <esc>
-imap kk <esc>u
+imap <c-g> <esc>
+vmap <c-g> <esc>
+"imap kk <esc>u
 imap uu <esc>u
 map qq :q
 "pastes from the clipboard:

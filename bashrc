@@ -54,6 +54,7 @@ PS11='\[\e[1;31m\]>>> [\w] (\[\e[1;34m\]\D{%a, %d %b}\[\e[0m\] \D{%l:%M:%S %p}\[
 export PS1='\[\e[1;34m\]\W \[\e[1;35m\](\j)➙ \[\e[0m\]'
 
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/share/npm/bin:~/.cabal/bin:/usr/local/bin:/usr/local/git/bin:$PATH
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export NODE_PATH='/usr/local/share/npm/lib/node_modules' #for -g node modules
 
 bind -f ~/.inputrc
@@ -78,3 +79,4 @@ function dman() {
 }
 
 # vim:ts=4:sw=4
+

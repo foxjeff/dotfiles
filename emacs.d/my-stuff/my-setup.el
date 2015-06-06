@@ -169,4 +169,15 @@
 
 (add-to-list 'sml/replacer-regexp-list '("^~/Projects/" ":Proj:"))
 
+(require 'expand-region)
+;;(global-set-key (kbd "S-SPC") 'er/expand-region)
+;;(global-set-key (kbd "C-S-SPC") 'er/contract-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "C-+") 'er/contract-region)
+
+;; to bring in shell env variables like path and manpath
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+(exec-path-from-shell-copy-env "NODE_PATH")
+
 (provide 'my-setup)

@@ -1,128 +1,128 @@
-map (+ 1) (1 2 3)
-mapcar (+ 1) (1 2 3)
-mapcar (+) (1 2 3)
-+1
-+ 1
-mapcar (lambda (n) (+ 1 n)) (1 2 3)
-(lambda (x) (+ 1 x))
-((lambda (x) (+ 1 x)) 23)
-(mapcar (lambda (x) (+ 1 x)) (1 2 3))
-(mapcar (lambda (x) (+ 1 x)) '(1 2 3))
-((lambda (x) (+ 1 x)) 23)
-(mapcar (lambda (n) (+ 1 n)) '(1 2 3))
-(mapcar (+) '(1 2 3))
-(mapcar '+ '(1 2 3))
-(mapcar '(+1) '(1 2 3))
-(mapcar '(+ 1) '(1 2 3))
-(mapcar (+ 1) '(1 2 3))
-(mapcar (lambda (n) (+ 1 n)) '(1 2 3))
+grep --color clock Clock.elm 
+grep --color=always clock Clock.elm 
+grep --color=always lift Clock.elm 
+addpath
+message $eshell-visual-commands
+top -o cpu -s 2
+cd -
+(shell-smart-initialize)
+$eshell-group-timestamp
+message $eshell-group-timestamp
+message $eshell-glob-chars-list
+$eshell-glob-chars-list
+cd ../Elm/hw/
+occur lift Clock.elm 
+occur
+info
+info eshell
+occur grep
+occur ls
+occur lotr
 ls
+ls -lotr
+occur today
+message "modified today: %s" { car *(m-1) }
+info eshell
+car *(m-1)
+cd -
+car *(m-1)
+car fi fo fum
+car (fi fo fum)
+car (listify fi fo fum)
+car (list fi fo fum)
+car '(fi fo fum)'
+*
+car *(m-1)
+car *
+cadr *
+lotr
+ls -lotr
+car *(m-4)
+*(m-4)
+message {*(m-4)}
+message "modified today: %s" { *(m-1) }
+cadr *(m-4)
+cdr *(m-4)
+cdr *(m-3)
+cdr *(m-5)
+cdr *(m-7)
+list *(m-7)
+listify  *(m-7)
+listify  *(a-7)
+listify  *(c-7)
+ls
+ls ..
+cd ../Meteor/
+ls
+ls Default/
+ff Default/Default.js
+ls Tutorials/
+ff leaderboard/leaderboard.js
+ff leaderboard/leaderboard.html
+mkdir informz
+cd informz/
+touch index.html
+touch app.js
+ff index.html 
+ls ../../scratch:moo2.hs
+ls ../../scratch/
+ff ../../scratch/index.html
+ls ../../new-stuf/
 alias
-v index.js 
-frame-parameters
-node
-node .
-cd ..
-node hello-world/
-cd ..
-node examples/hello-world/
-which node
-/usr/local/bin/node examples/hello-world/
-ls examples/
-/usr/local/bin/node examples/mvc/
-do examples/mvc/
-do examples/mvc/
-ls examples/mvc/
-ls examples/mvc/views/
-ls examples/mvc/controllers/
-v examples/mvc/controllers/main/index.js 
-do examples/mvc/
-/usr/local/bin/node examples/mvc/
-npm info express
-clear 
-reset
-ls
-v package.json 
-ls -a examples/hello-world/
-v examples/hello-world/index.js 
+d ../../scratch/
+exit 
 ls
-v examples/hello-world/index.js 
-v package.json 
-ls lib/
-node
-v examples/hello-world/index.js 
-v examples/hello-world/index.js 
-lotr ~/.emacs.d/my-stuff/js2-mode.elc 
-ls -otrh ~/.emacs.d/my-stuff/js2-mode.elc 
-ls -otrh ~/.emacs.d/my-stuff/js2-mode.el
-ls -otrh ~/.emacs.d/my-stuff/
-v ~/.emacs.d/elpa/js2-mode-readme.txt 
-ls -otrh ~/.emacs.d/elpa/js2*
-v ~/.emacs.d/my-stuff/js2-mode.elc 
-meteor --help
-meteor --version
-which meteor
-brew info meteor
-cd ../mytodo/
-mkdir app
-mkdir app/api
-ff app/api/data.json
-ff app/scripts/app.js 
-v app/scripts/foo.js
-v app/scripts/controllers/main.js
-v app/views/main.html 
-ff app/scripts/controllers/main.js
-exit
-()
-ff
-alias
-eval (quote ())
-eval ()
-help
-$(1)
-$('())
-echo *
-echo *(:U)
-cwd
-pwd
-cd ~
+cd Projects/scratch/
 ls
-echo *
-echo
-echo \'()
-eval \'()
-eval 
-eval ()
-eval (1 2 3)
-eval (quote (1 2 3))
-eval (quote '(1 2 3))
-eval (cdr '(1 2 3))
-eval (cdr (quote '(1 2 3)))
-eval (cdr (quote (1 2 3)))
-cdr (1 2 3)
-+ 1 2
-ls
-pwd
-which ls
-unalias ls
-/bin/ls
-/bin/ls
-+ 1 2
-+ 1 2
-+ 1 22
-exit
-(read-from-minibuffer "yo: ")
-(defun greeting (from-name))
-(defun greeting (from-name))
-(greeting)
-(greeting "erpa")
-helloI am erpa and your derpa
+ls -lotr
+ls -lotr
+ls -lotr
 local-name
-(message "erpa")
+ls
 (message local-name)
-(message buffer-name)
-buffer-name
-buffer-face-mode 
-buffer-file-name
-buffer-name
-(buffer-face-mode -1)
+ls -lotr
+defaults read com.apple.dock
+ls -lotr
+ls
+message "hello"
+head erpa.js 
+head erpa.js 
+ls
+exit
+cd ~Projects/scratch/
+cd ~/Projects/scratch/
+exit
+ls
+ls build/
+ls cache/
+ls ..
+ls ../elm-examples/
+grep --color=always lift Clock.elm 
+man fgrep
+find /Users/anand/Dropbox/ -name "yogi.jpg"  -print
+find /Users/anand/Dropbox/ -name "me.jpg"  -print
+find /Users/anand/Dropbox/ -name "me.*"  -print
+find /Users/anand/Dropbox/ -name "yogi.*"  -print
+find /Users/anand/Projects/ -name "yogi.*"  -print
+mv ~/Downloads/yogi.jpg .
+ls
+ls -lotr
+elm HelloWorld1.elm
+ls build/
+ls build/build/
+ls build/cache/
+ls
+cp yogi.jpg build/
+ls ../..
+cd ../../Clojure/
+ls
+ls myapp/
+ls myapp/src/
+ls myapp/src/myapp/
+cat myapp/src/myapp/core.clj 
+ls ../scratch/
+find /Users/anand/Projects/ -name "*.clj"  -print
+cd ../my-stuff/
+ls
+ff destructuring.clj 
+exit

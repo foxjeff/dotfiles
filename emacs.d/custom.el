@@ -3,31 +3,45 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(auto-save-visited-file-name nil)
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   (vector "#c5c8c6" "#cc6666" "#b5bd68" "#f0c674" "#81a2be" "#b294bb" "#8abeb7" "#1d1f21"))
  '(blink-cursor-mode t)
  '(bookmark-save-flag 1)
  '(browse-url-text-browser "/usr/local/bin/w3m")
- '(column-number-mode t)
+ '(column-number-mode nil)
  '(completion-auto-help (quote lazy))
  '(confirm-kill-emacs (quote yes-or-no-p))
  '(cursor-in-non-selected-windows nil)
- '(custom-safe-themes (quote ("255de8fde9647c6a0fbd0c9877ee02b612f8ed3cf5c78162b83ee68dfef05952" "80ad5d22c99e5828fd321142af1d34dbe1dcc1f21363d75273341082cf69973d" "1308d37a00fed50cbf819341e42dc0b712b4c4f25e7180725b0d36152387e2b2" "e3b0bbcf4e02e48d0c1d6f32828713fbe1f7e3b74f081961908e063e80cb5473" "7c87a0b4b74ccb3c0daa5a7970eee3835aff2c8bb9f1ff07d88aea2ce78dac92" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "f75a9ef024eed848b44a1ce8897bb4fd6f522e50885ab733b2a59f0d76c5fc38" "b59991fd0f8e452f3d00474c3f9171fd93883cbc8c33bcc587179814b3aa2115" "e697d31361bb4a0a2c15db5a18b2ff4b2bd256fbebc29fdc72deb802b505eb64" "acbbe2604ab67c1cb108686e46eca7a52f86386b9d427c3513494f6bbe791525" "7a9f392481b6e2fb027ab9d8053ab36c0f23bf5cc1271206982339370d894c74" "a37600b047da389eccc4a17b5f165d512fb1d32f18d93cffb28154b5f4eb4437" "2283e0e235d6f00b717ccd7b1f22aa29ce042f0f845936a221012566a810773d" "d9639ebed5f3709f47b53e4bb8eea98a11455ab9336039cf06e9695a0233d5fb" "f32dd8e7b3a508874eded03d5be43d2bdfffe81c199eea72de06ce3e653db720" "97a2b10275e3e5c67f46ddaac0ec7969aeb35068c03ec4157cf4887c401e74b1" "8eef22cd6c122530722104b7c82bc8cdbb690a4ccdd95c5ceec4f3efa5d654f5" "394504bd559027641b544952d6e9e1c6dcb306b4d1b2c4ad6b98d3e6b5459683" "1f70ca6096c886ca2a587bc10e2e8299ab835a1b95394a5f4e4d41bb76359633" "2b5aa66b7d5be41b18cc67f3286ae664134b95ccc4a86c9339c886dfd736132d" "320b0bae27d92a5d9780be3ede4e5e91d6214ce7337b556122c009f7e28b231c" "968d1ad07c38d02d2e5debffc5638332696ac41af7974ade6f95841359ed73e3" "ce8998464858cd579515f35dd9c582f03e14175d898f67ace69f6a6c5624ed68" "6ecd272356446b0437d764025a4730122f17966382d81dea4ce4a0bb9714d16b" "d9ae30b2331d61cef7e09ae98a29fdb524ddfc8cfb14897f6975c1ca47d90ded" "460f55a3fa49230c3646ce0bf834aa95ad5dd436b98cf96cf7f40249dd14ac48" "df49ae508eff4dcdc07bc79e151cb57f40b1788f7df1d3da0b329de41eed524d" "c8c47b4be1617081784ca5ed40016bdce8bc39c368df04a1f7d34f8520870c2f" "b3336919d9bb4c3e9a89ddb489cc9a255e13444ebde75e59cf01dc302bd5c715" "bb5d843dbf87bd268685794bcf7e106ee36e457a222c5ddab066aaf97d815e36" "1760322f987b57884e38f4076ac586c27566a1d7ed421b67843c8c98a1501e3a" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "59946e8f0cb8dfe511443f881282b68b3c387b4e1afc21d73541b726ed472bf4" default)))
+ '(custom-safe-themes
+   (quote
+    ("bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "255de8fde9647c6a0fbd0c9877ee02b612f8ed3cf5c78162b83ee68dfef05952" "80ad5d22c99e5828fd321142af1d34dbe1dcc1f21363d75273341082cf69973d" "1308d37a00fed50cbf819341e42dc0b712b4c4f25e7180725b0d36152387e2b2" "e3b0bbcf4e02e48d0c1d6f32828713fbe1f7e3b74f081961908e063e80cb5473" "7c87a0b4b74ccb3c0daa5a7970eee3835aff2c8bb9f1ff07d88aea2ce78dac92" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "f75a9ef024eed848b44a1ce8897bb4fd6f522e50885ab733b2a59f0d76c5fc38" "b59991fd0f8e452f3d00474c3f9171fd93883cbc8c33bcc587179814b3aa2115" "e697d31361bb4a0a2c15db5a18b2ff4b2bd256fbebc29fdc72deb802b505eb64" "acbbe2604ab67c1cb108686e46eca7a52f86386b9d427c3513494f6bbe791525" "7a9f392481b6e2fb027ab9d8053ab36c0f23bf5cc1271206982339370d894c74" "a37600b047da389eccc4a17b5f165d512fb1d32f18d93cffb28154b5f4eb4437" "2283e0e235d6f00b717ccd7b1f22aa29ce042f0f845936a221012566a810773d" "d9639ebed5f3709f47b53e4bb8eea98a11455ab9336039cf06e9695a0233d5fb" "f32dd8e7b3a508874eded03d5be43d2bdfffe81c199eea72de06ce3e653db720" "97a2b10275e3e5c67f46ddaac0ec7969aeb35068c03ec4157cf4887c401e74b1" "8eef22cd6c122530722104b7c82bc8cdbb690a4ccdd95c5ceec4f3efa5d654f5" "394504bd559027641b544952d6e9e1c6dcb306b4d1b2c4ad6b98d3e6b5459683" "1f70ca6096c886ca2a587bc10e2e8299ab835a1b95394a5f4e4d41bb76359633" "2b5aa66b7d5be41b18cc67f3286ae664134b95ccc4a86c9339c886dfd736132d" "320b0bae27d92a5d9780be3ede4e5e91d6214ce7337b556122c009f7e28b231c" "968d1ad07c38d02d2e5debffc5638332696ac41af7974ade6f95841359ed73e3" "ce8998464858cd579515f35dd9c582f03e14175d898f67ace69f6a6c5624ed68" "6ecd272356446b0437d764025a4730122f17966382d81dea4ce4a0bb9714d16b" "d9ae30b2331d61cef7e09ae98a29fdb524ddfc8cfb14897f6975c1ca47d90ded" "460f55a3fa49230c3646ce0bf834aa95ad5dd436b98cf96cf7f40249dd14ac48" "df49ae508eff4dcdc07bc79e151cb57f40b1788f7df1d3da0b329de41eed524d" "c8c47b4be1617081784ca5ed40016bdce8bc39c368df04a1f7d34f8520870c2f" "b3336919d9bb4c3e9a89ddb489cc9a255e13444ebde75e59cf01dc302bd5c715" "bb5d843dbf87bd268685794bcf7e106ee36e457a222c5ddab066aaf97d815e36" "1760322f987b57884e38f4076ac586c27566a1d7ed421b67843c8c98a1501e3a" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "59946e8f0cb8dfe511443f881282b68b3c387b4e1afc21d73541b726ed472bf4" default)))
  '(default-frame-alist (quote ((height . 52) (width . 113))))
  '(dired-isearch-filenames t)
  '(dired-use-ls-dired t)
  '(display-time-day-and-date nil)
  '(display-time-mode t)
+ '(eshell-cmpl-ignore-case t)
+ '(eshell-glob-case-insensitive t)
  '(eshell-kill-processes-on-exit (quote ask))
- '(evil-emacs-state-modes (quote (archive-mode bbdb-mode bookmark-bmenu-mode bookmark-edit-annotation-mode browse-kill-ring-mode bzr-annotate-mode calc-mode cfw:calendar-mode completion-list-mode Custom-mode debugger-mode delicious-search-mode desktop-menu-blist-mode desktop-menu-mode doc-view-mode dvc-bookmarks-mode dvc-diff-mode dvc-info-buffer-mode dvc-log-buffer-mode dvc-revlist-mode dvc-revlog-mode dvc-status-mode dvc-tips-mode ediff-mode ediff-meta-mode efs-mode Electric-buffer-menu-mode emms-browser-mode emms-mark-mode emms-metaplaylist-mode emms-playlist-mode etags-select-mode fj-mode gc-issues-mode gdb-breakpoints-mode gdb-disassembly-mode gdb-frames-mode gdb-locals-mode gdb-memory-mode gdb-registers-mode gdb-threads-mode gist-list-mode gnus-article-mode gnus-browse-mode gnus-group-mode gnus-server-mode gnus-summary-mode google-maps-static-mode ibuffer-mode jde-javadoc-checker-report-mode magit-commit-mode magit-diff-mode magit-key-mode magit-log-mode magit-mode magit-reflog-mode magit-show-branches-mode magit-branch-manager-mode magit-stash-mode magit-status-mode magit-wazzup-mode magit-process-mode mh-folder-mode monky-mode mu4e-main-mode mu4e-headers-mode mu4e-view-mode notmuch-hello-mode notmuch-search-mode notmuch-show-mode occur-mode org-agenda-mode package-menu-mode proced-mode rcirc-mode rebase-mode recentf-dialog-mode reftex-select-bib-mode reftex-select-label-mode reftex-toc-mode sldb-mode slime-inspector-mode slime-thread-control-mode slime-xref-mode sr-buttons-mode sr-mode sr-tree-mode sr-virtual-mode tar-mode tetris-mode tla-annotate-mode tla-archive-list-mode tla-bconfig-mode tla-bookmarks-mode tla-branch-list-mode tla-browse-mode tla-category-list-mode tla-changelog-mode tla-follow-symlinks-mode tla-inventory-file-mode tla-inventory-mode tla-lint-mode tla-logs-mode tla-revision-list-mode tla-revlog-mode tla-tree-lint-mode tla-version-list-mode twittering-mode urlview-mode vc-annotate-mode vc-dir-mode vc-git-log-view-mode vc-svn-log-view-mode vm-mode vm-summary-mode w3m-mode wab-compilation-mode xgit-annotate-mode xgit-changelog-mode xgit-diff-mode xgit-revlog-mode xhg-annotate-mode xhg-log-mode xhg-mode xhg-mq-mode xhg-mq-sub-mode xhg-status-extra-mode package-menu-mode help-mode)))
+ '(evil-emacs-state-modes
+   (quote
+    (archive-mode bbdb-mode bookmark-bmenu-mode bookmark-edit-annotation-mode browse-kill-ring-mode bzr-annotate-mode calc-mode cfw:calendar-mode completion-list-mode Custom-mode debugger-mode delicious-search-mode desktop-menu-blist-mode desktop-menu-mode doc-view-mode dvc-bookmarks-mode dvc-diff-mode dvc-info-buffer-mode dvc-log-buffer-mode dvc-revlist-mode dvc-revlog-mode dvc-status-mode dvc-tips-mode ediff-mode ediff-meta-mode efs-mode Electric-buffer-menu-mode emms-browser-mode emms-mark-mode emms-metaplaylist-mode emms-playlist-mode etags-select-mode fj-mode gc-issues-mode gdb-breakpoints-mode gdb-disassembly-mode gdb-frames-mode gdb-locals-mode gdb-memory-mode gdb-registers-mode gdb-threads-mode gist-list-mode gnus-article-mode gnus-browse-mode gnus-group-mode gnus-server-mode gnus-summary-mode google-maps-static-mode ibuffer-mode jde-javadoc-checker-report-mode magit-commit-mode magit-diff-mode magit-key-mode magit-log-mode magit-mode magit-reflog-mode magit-show-branches-mode magit-branch-manager-mode magit-stash-mode magit-status-mode magit-wazzup-mode magit-process-mode mh-folder-mode monky-mode mu4e-main-mode mu4e-headers-mode mu4e-view-mode notmuch-hello-mode notmuch-search-mode notmuch-show-mode occur-mode org-agenda-mode package-menu-mode proced-mode rcirc-mode rebase-mode recentf-dialog-mode reftex-select-bib-mode reftex-select-label-mode reftex-toc-mode sldb-mode slime-inspector-mode slime-thread-control-mode slime-xref-mode sr-buttons-mode sr-mode sr-tree-mode sr-virtual-mode tar-mode tetris-mode tla-annotate-mode tla-archive-list-mode tla-bconfig-mode tla-bookmarks-mode tla-branch-list-mode tla-browse-mode tla-category-list-mode tla-changelog-mode tla-follow-symlinks-mode tla-inventory-file-mode tla-inventory-mode tla-lint-mode tla-logs-mode tla-revision-list-mode tla-revlog-mode tla-tree-lint-mode tla-version-list-mode twittering-mode urlview-mode vc-annotate-mode vc-dir-mode vc-git-log-view-mode vc-svn-log-view-mode vm-mode vm-summary-mode w3m-mode wab-compilation-mode xgit-annotate-mode xgit-changelog-mode xgit-diff-mode xgit-revlog-mode xhg-annotate-mode xhg-log-mode xhg-mode xhg-mq-mode xhg-mq-sub-mode xhg-status-extra-mode package-menu-mode help-mode)))
  '(evil-leader/in-all-states t)
- '(exec-path (quote ("/usr/local/opt/coreutils/libexec/gnubin" "/usr/local/share/npm/bin" "/usr/local/bin" "/usr/local/git/bin" "/usr/bin" "/bin" "/usr/sbin" "/sbin")))
+ '(fci-rule-color "#282a2e")
  '(frame-background-mode nil)
+ '(frame-brackground-mode (quote dark))
  '(global-centered-cursor-mode t)
+ '(global-visual-line-mode t)
  '(haskell-mode-hook (quote (turn-on-haskell-doc turn-on-haskell-indentation)))
+ '(haskell-process-type (quote cabal-repl))
  '(history-delete-duplicates t)
  '(history-length t)
  '(icomplete-mode t)
- '(ido-decorations (quote ("
+ '(ido-decorations
+   (quote
+    ("
 -> " "" "
    " "
    ..." "[" "]" " [No match]" " [Matched]" " [Not readable]" " [Too big]" " [Confirm]")) nil nil "changed for vertical display")
@@ -36,6 +50,7 @@
  '(ido-use-virtual-buffers t)
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
+ '(initial-buffer-choice (quote remember-notes))
  '(kill-read-only-ok t)
  '(line-number-mode t)
  '(lisp-mode-hook nil)
@@ -52,10 +67,18 @@
  '(ns-antialias-text t)
  '(ns-command-modifier (quote meta))
  '(ns-function-modifier (quote super))
+ '(org-babel-load-languages (quote ((sh . t) (emacs-lisp . t))))
  '(org-default-notes-file "~/Dropbox/work/org-mode/new-notes.org")
  '(org-src-fontify-natively t)
- '(package-archives (quote (("org" . "http://orgmode.org/elpa/") ("melpa" . "http://melpa.milkbox.net/packages/") ("gnu" . "http://elpa.gnu.org/packages/") ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") ("marmalade" . "http://marmalade-repo.org/packages/"))))
+ '(package-archives
+   (quote
+    (("org" . "http://orgmode.org/elpa/")
+     ("melpa" . "http://melpa.org/packages/")
+     ("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa-stable" . "http://melpa-stable.melpa.org/packages/")
+     ("marmalade" . "http://marmalade-repo.org/packages/"))))
  '(paradox-github-token t)
+ '(remember-notes-buffer-name "*scratch*")
  '(savehist-mode t nil (savehist))
  '(scroll-bar-mode nil)
  '(scroll-error-top-bottom t)
@@ -67,25 +90,49 @@
  '(sml/shorten-directory t)
  '(sml/theme (quote dark))
  '(smooth-scroll-margin 13)
- '(tab-width 4)
+ '(tab-width 2)
  '(tool-bar-mode nil)
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#cc6666")
+     (40 . "#de935f")
+     (60 . "#f0c674")
+     (80 . "#b5bd68")
+     (100 . "#8abeb7")
+     (120 . "#81a2be")
+     (140 . "#b294bb")
+     (160 . "#cc6666")
+     (180 . "#de935f")
+     (200 . "#f0c674")
+     (220 . "#b5bd68")
+     (240 . "#8abeb7")
+     (260 . "#81a2be")
+     (280 . "#b294bb")
+     (300 . "#cc6666")
+     (320 . "#de935f")
+     (340 . "#f0c674")
+     (360 . "#b5bd68"))))
+ '(vc-annotate-very-old-color nil)
  '(vc-follow-symlinks nil)
  '(w3m-command "/usr/local/bin/w3m")
- '(w3m-home-page "duckduckgo.com"))
+ '(w3m-home-page "duckduckgo.com")
+ '(winner-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(font-lock-comment-face ((t (:slant italic :foreground "dimgrey"))))
+ '(default ((t (:background "#1a1a1a"))))
+ '(font-lock-comment-face ((t (:foreground "grey57"))))
  '(font-lock-keyword-face ((t (:background "#F0F0F0" :foreground "#404040"))))
  '(font-lock-string-face ((t (:foreground "grey30"))))
- '(rainbow-delimiters-depth-1-face ((t (:foreground "#000"))))
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "#ccc"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "#33bb00"))))
- '(rainbow-delimiters-depth-3-face ((t (:foreground "#187fd5"))))
- '(rainbow-delimiters-depth-4-face ((t (:foreground "#eb77ec"))))
- '(rainbow-delimiters-depth-5-face ((t (:foreground "#b44"))))
+ '(rainbow-delimiters-depth-3-face ((t (:foreground "#9b30ff"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "#187fd5"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "#eb77ec"))))
  '(rainbow-delimiters-depth-6-face ((t (:foreground "#1fef66"))))
- '(web-mode-current-element-highlight-face ((t (:background "grey96"))))
+ '(web-mode-current-element-highlight-face ((t (:background "grey16"))))
  '(web-mode-html-attr-name-face ((t (:foreground "green4"))))
  '(web-mode-html-tag-face ((t (:foreground "DeepSkyBlue3")))))

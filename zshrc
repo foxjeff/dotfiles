@@ -23,3 +23,5 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 #last 2 segments of path in purple(55) and job# in parens if > 0
 prompt="%F{55}"'%2~'"%f"'%1(j.(%j%).)➙  '
 alias ls='ls -FCGp'
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

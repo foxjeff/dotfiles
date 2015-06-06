@@ -2,11 +2,21 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-capture-last-stored"
- (filename . "~/Projects/Notes/new-notes.org")
- (front-context-string . "+ new stuff here")
- (rear-context-string . "ser plugin]]\n+ \n")
- (position . 20763))
+(("aa"
+ (filename . "~/Projects/Notes/understanding-seth.org")
+ (front-context-string . "and why should y")
+ (rear-context-string . "re going to get\n")
+ (position . 98618))
+("erpa"
+ (filename . "~/Projects/my-markdown-preview.el")
+ (front-context-string . "                ")
+ (rear-context-string . "round \"#404040\"\n")
+ (position . 7149))
+("org-capture-last-stored"
+ (filename . "~/Dropbox/work/org-mode/new-notes.org")
+ (front-context-string . "- fogettaboutit ")
+ (rear-context-string . "Emacs goodies]]\n")
+ (position . 277))
 ("em"
  (filename . "~/Dropbox/work/software-ideas-other.md")
  (front-context-string . "r\n- change face ")

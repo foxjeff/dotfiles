@@ -59,24 +59,24 @@
               ;(when (not package-archive-contents) ;; only called during a fresh install
               ;   (package-refresh-contents))
               (require 'smooth-scrolling)
-              ;;(require 'js2-mode)
+              ;;(require 'js3-mode)
               ;; JavaScript
-              (autoload 'js2-mode "js2-mode" nil t)
+              (autoload 'js3-mode "js3-mode" nil t)
               (font-lock-add-keywords
-               'js2-mode `(("\\(function\\) *("
+               'js3-mode `(("\\(function\\) *("
                             (0 (progn (compose-region (match-beginning 1)
                                                       (match-end 1) "\u0192")
                                       nil)))))
 
               ;; Use right arrow for return in one-line functions
               (font-lock-add-keywords
-               'js2-mode `(("function *([^)]*) *{ *\\(return\\) "
+               'js3-mode `(("function *([^)]*) *{ *\\(return\\) "
                             (0 (progn (compose-region (match-beginning 1)
                                                       (match-end 1) "\u2192")
                                       nil)))))
-              (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+              (add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
               (add-to-list 'auto-mode-alist '("\\.json$" . javascript-mode))
-              (add-to-list 'magic-mode-alist '("#!/usr/bin/env node" . js2-mode))
+              (add-to-list 'magic-mode-alist '("#!/usr/bin/env node" . js3-mode))
 
               ;; markdown mode stuff
               (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
@@ -119,7 +119,7 @@
 
               ;; well, hello
               (require 'key-chord)
-              (key-chord-mode 1)
+              ;;(key-chord-mode 1)
               (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
               (key-chord-define evil-insert-state-map "ww" 'save-buffer)
               (key-chord-define evil-insert-state-map "uu" 'undo-tree-undo)
@@ -134,7 +134,8 @@
 
               ;; themes -- color
               ;; (load-theme 'whiteboard2 t)
-              (load-theme 'gruber-darker t)
+              ;; (load-theme 'gruber-darker t)
+              (load-theme 'sanityinc-tomorrow-night t)
               ;; (load-theme 'afternoon t)
               ;; (load-theme 'ample-light t)
               ;;(load-theme 'solarized-light t)
@@ -156,7 +157,9 @@
               (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
               ;; added to custom -- not so much
-              (set-face-attribute 'default nil :font "DejaVu Sans Mono-13")
+              (set-face-attribute 'default nil :font "Menlo Regular-12")
+              ;;(set-face-attribute 'default nil :font "DejaVu Sans Mono-12")
+              (setq-default line-spacing 1)
 
               ;; smart-mode-line
               (setq sml/theme 'dark)
@@ -190,6 +193,13 @@ This is the same as using \\[set-mark-command] with the prefix argument."
 
 ;; org-mode capture
 (global-set-key (kbd "C-c c") 'org-capture)
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c b") 'org-iswitchb)
+(setq org-completion-use-ido 1)
+(setq org-agenda-files (list "~/Projects/Notes/basic-astrology.org"
+                             "~/Projects/Notes/new-notes.org"
+                             "~/Dropbox/work/org-mode/emacs-todo.org"))
 
 ;; kill buffer other-window
 ;; for when help or whatever obliterates your nice other-window
@@ -285,3 +295,4 @@ This is the same as using \\[set-mark-command] with the prefix argument."
 ;;  ;;optional keyboard short-cut
 ;;  (global-set-key "\C-xm" 'browse-url-at-point)
 
+(put 'narrow-to-region 'disabled nil)

@@ -17,6 +17,8 @@ fi
 export MANPATH=/usr/share/man:/usr/local/share/man:/opt/local/share/man
 export INFOPATH=/usr/share/info:/usr/local/share/info:/opt/local/share/info
 
+export NODE_REPL_HISTORY_FILE='/Users/anand/.iojs_repl_history'
+
 #export PATH JAVA_HOME
 unset USERNAME
 #export DOCUMENT_ROOT=/var/www
@@ -28,4 +30,6 @@ fi
 
 #for rbenv
 #eval "$(rbenv init -)"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
