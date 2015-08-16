@@ -28,7 +28,7 @@ set t_Co=256
 "set t_kD=
 set hls
 "timeoutlen is how long pressing <ESC> delays; default is 1000ms
-set timeoutlen=500
+set timeoutlen=300
 let g:rainbow_active = 1
 
 "colorscheme stuff
@@ -40,9 +40,9 @@ let g:rainbow_active = 1
 "let g:solarized_italic    =   1       |   0
 "let g:solarized_style     ="dark" " |   light
 "let g:solarized_contrast="high" "or low
-set background=dark
 let g:liquidcarbon_high_contrast=5
 colorscheme liquidcarbon
+set background=dark
 "colorscheme solarized
 "colorscheme xoria256
 "
@@ -54,6 +54,7 @@ set history=500
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2
+set expandtab
 set pastetoggle=<F4>
 set hidden
 "makes v copy to clipboard
@@ -77,9 +78,6 @@ let g:miniBufExplSplitBelow = 1
 "paredit - no shortmaps, changes J and O among other things
 let g:paredit_shortmaps=0
 
-"line numbering toggle from:
-"http://superuser.com/questions/339593/vim-toggle-number-with-relativenumber
-noremap <silent><F7> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
 
 "for vimclojure
 "let g:vimclojure#WantNailgun=1
@@ -90,18 +88,39 @@ let g:coffee_compile_on_save = 1
 "Preview
 let g:PreviewBrowsers='open -g -a Safari'
 
-cnoremap <C-A> <HOME>
-cno \h ~/
-cno \v ~/.vim/
-cno \\ ~/.
+"these use the default leader: "\"
+cno <leader>h ~/
+cno <leader>v ~/.vim/
+cno <leader>\ ~/.
+map <silent> <leader>ww :w<cr>
+imap <leader>ww <esc>:w<cr>
 
-nmap <silent> \bb :call BufferList()<CR>
-nmap <silent> \z <Plug>ToggleProject 
 
-nmap <F1> :bp
-nmap <F2> :bn
+"nmap <silent> \bb :call BufferList()<CR>
+"nmap <silent> \z <Plug>ToggleProject 
+
+let mapleader="\<space>"
+nmap <leader>pp "*p
+nmap <leader>PP "*P
+map <leader>w :bw<CR> "wipe buffer
+map <leader>c :close<CR> "close window
+nmap <leader>. <pagedown>
+nmap <leader>, <pageup>
+map <silent> <leader>f :WinFullScreen<cr>
+"nmap <silent><leader>] o<esc>
+"nmap <silent><leader>[ O<esc>
+
+
+nmap <F1> :bp<cr>
+nmap <F2> :bn<cr>
 nmap <F3> :set hlsearch!<cr>
-imap <F3> <esc>:set hlsearch!<cr>a
+imap <F3> <esc>:set hlsearch!<cr>
+"<F4> is pastetoggle
+nmap <F5> :BufExplorer<cr>
+"line numbering toggle from:
+"http://superuser.com/questions/339593/vim-toggle-number-with-relativenumber
+noremap <silent><F7> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
+cnoremap <C-A> <HOME>
 imap  <Del>
 imap jj <esc>
 imap <c-g> <esc>
@@ -110,22 +129,11 @@ vmap <c-g> <esc>
 imap uu <esc>u
 map qq :q
 "pastes from the clipboard:
-nmap \pp "*p
-nmap \PP "*P
 
 vnoremap > >gv
 vnoremap < <gv
 "noremap <silent> <F5> :buffers<CR>
 "
-nmap <F5> \be
-map \bw :bw<CR>
-
-map <silent> \ww :w<cr>
-imap <leader>ww <esc>:w<cr>
-
-"nmap <silent><leader>] o<esc>
-"nmap <silent><leader>[ O<esc>
-nmap <SPACE> <PAGEDOWN>
 nmap <C-J> <C-W>j
 nmap <C-K> <C-W>k
 nmap <TAB> <C-W>w
@@ -134,7 +142,6 @@ nmap k gk
 "nmap t o<ESC>k 
 "nmap T O<ESC>j 
 "
-map <silent> <leader>f :WinFullScreen<cr>
 
 "these have questionable value with paredit mode
 "imap '' ''<LEFT>
@@ -186,6 +193,7 @@ au InsertEnter * setlocal nocursorline
 au InsertLeave * setlocal cursorline
 au InsertLeave * set nopaste
 
+set background=dark
 "not sure about this: 
 "function! Ruby_eval_vsplit() range
   "let src = tempname()

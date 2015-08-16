@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/anand/Projects/Ideas/" . "cards/")
  ("/Users/anand/Projects/Elm/" . "hw/")
  ("/Users/anand/Projects/Clojure/address-book/src/address_book/" . "core/")
  ("/Users/anand/Projects/Clojure/address-book/src/" . "address_book/")
@@ -23,18 +24,19 @@
  ("/Users/anand/Projects/Meteor/" . "leaderboard/")
  ("/Users/anand/Dropbox/Projects/" . "weather/")
  ("/Users/anand/Dropbox/" . "Notational Data/")
- ("/Users/anand/Projects/" . "Elm/")
+ ("/Users/anand/Projects/" . "Notes/")
  ("/Users/anand/" . "Dropbox/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/anand/Projects/Notes/"
+ "/Users/anand/Projects/Ideas/cards/"
  "/Users/anand/Dropbox/Notational Data/"
  "/Users/anand/Projects/Elm/hw/"
  "/Users/anand/Projects/Clojure/address-book/src/address_book/core/"
  "/Users/anand/Dropbox/work/org-mode/"
  "/Users/anand/.emacs.d/my-stuff/"
- "/Users/anand/Projects/Notes/"
  "/Users/anand/Projects/scratch/"
  "/Users/anand/Downloads/"
  "/Users/anand/.emacs.d/elpa/key-chord-20080915.2156/"
@@ -60,6 +62,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "resume-julie.md"
+ "scratch.js"
  "stuff-1.txt"
  "HelloWorld1.elm"
  "handler.clj"
@@ -68,20 +72,24 @@
  "doctorjeff.org"
  "cover-letters.md"
  "moo3.hs"
- "moo2.hs"
- "stuff22.rkt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/anand/Projects/Ideas/" (21847 43009 0 0) "README.md" "cards/" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/anand/Projects/Ideas/cards/" (21851 65245 0 0) "simple-prompt.js" "scratch.js" "resume.txt" "Readme.md" "questions.txt" "node_modules/" "foo.js" "foo" ".gitignore" "../" "./")
+
+ ("/Users/anand/Projects/" (21817 44934 0 0) "yoApp3/" "yoApp2/" "yoApp/" "xiki/" "wiki/" "weather/" "tutorial.hs" "tutorial/" "tut0.svg" "templ-yoApp/" "stylistics/" "stuff.rkt" "starter-kit-save/" "starter-kit-1.4.0/" "sndYoApp/" "service-provider-factory-example.js" "scratch:moo2.hs" "scratch/" "people.txt" "pbcopy" "om-tut-save/" "om-tut/" "om-sweeper/" "Notes/" "NodeFun/" "ngbp1/" "new.html" "new-stuf/" "mywiki/" "myquotefork/" "my-stuff/" "my-markdown-preview.el" "mumblr01/" "mumblr.wiki-save/" "mumblr.wiki/" "misc-githubs/" "Meteor/" "logic-tutorial/" "lein-tutorial.md" "lein-profiles.md" "learning-lisp.el" "jeff-head-round.png" "ionic-weather/" "ionApp/" "Ideas/" "foxjeff.com/" "foxjeff.bitbucket.org/" "foo2.md" "foo2.html" "foo.md" "foo.js" "foo.html" "ex.lst" "Ember-Too/" "Elm/" "dnd.md" "dash.sh" "dark-room.save" "CoffeeScript/" "Clojure/" "clj-tut.html" "chess.clj" "cards/" "bb101repo/" "AngularFun/" "angular-seed/" "angular-express-seed/" "AngTest-2/" "AngTest/" "access.log" ".travis.yml" ".jshintrc" ".gitignore" ".gitattributes" ".editorconfig" ".DS_Store" ".bowerrc" "#my-markdown-preview.el#" "../" "./")
+
+ ("/Users/anand/Projects/Notes/" (21834 62241 0 0) "us.md" "understanding-seth.pdf" "understanding-seth.org" "understanding-seth.md" "understanding-seth.html" "understanding-programming.org" "understanding-programming.html" "understanding-astrology.org" "understanding-astrology.html" "tea-smith.md" "style1.css" "strongbox.org" "strongbox.html" "steve-letter.md" "square-root.md" "save-it" "sails-info.md" "sacha.org" "resume-julie.md" "quote-cards-research.org" "post1.org" "post1.html" "odd-duck.org" "odd-duck.md" "odd-duck.html" "notes-to-myself.md" "notes-to-myself.html" "notes-from-imac.md" "notes-from-imac.html" "new-notes.org" "new-notes.html" "mobile-inbox.org" "mobile-inbox.html" "michael-letter.md" "michael-letter.html" "lt-rainbow.css" "kevin-chat.txt" "jyotish-vargas.md" "jayaraj-notes.md" "jayaraj-notes.html" "jay-noddle.md" "index.html" "git-notes.md" "further-notes.md" "doctorjeff.org" "doctorjeff.html" "cyber-coders-reggie.md" "cover-letters.md" "basic-astrology.org" "basic-astrology.html" "#lt-rainbow.css#" "../" "./")
+
+ ("/Users/anand/" (21829 12910 0 0) "VirtualBox VMs/" "tmp/" "Snapshots/" "Sites/" "Public/" "Projects/" "Prezi/" "Pictures/" "News/" "Music/" "Movies/" "Library/" "leksah.lkshw" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Applications/" "acme-home/" ".zshrc" ".zlogin" ".zcompdump" ".yjp/" ".xvimrc" ".WebStorm9/" ".w3m/" ".vimrc" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim/" ".vagrant.d/" ".Trash/" ".tcshrc" ".subversion/" ".ssh-save/" ".ssh/" ".sqlite_history" ".sonic-pi/" ".sml_history" ".smex-items" ".slate" ".sh_history" ".screenrc" ".rvm/" ".rediscli_history" ".recentf~" ".recentf" ".rbenv/" ".rainbow_oauth" ".rainbow_config.json" ".python-eggs/" ".pryrc" ".pry_history" ".profile" ".plugman/" ".pip/" ".php_history" ".pentadactylrc" ".pentadactyl/" ".overtone/" ".nrepl-history.eld" ".npmrc" ".npm/" ".notes" ".node_history" ".node-gyp/" ".newsrc.eld" ".newsrc" ".newsbeuter/" ".mix/" ".mit-scheme_history" ".mime.types" ".meteorsession" ".meteorite/" ".meteor/" ".Marked Preview.md" ".mailcap" ".m2/" ".local/" ".lldb/" ".lighttable/" ".lesshst" ".leksah-0.14/" ".lein/" ".ledgerrc" ".keysnail.js" ".jrnl_config" ".jrc" ".jline-reply.history" ".jline-clojure.main.history" ".jhistory" ".java_history" ".jarvis" ".ispell_english" ".irb_history" ".irb-history" ".ipython/" ".ionic/" ".inputrc" ".image.so" ".ihaskell/" ".ido.last~" ".ido.last" ".history" ".hgrc" ".hgignore_global" ".hex/" ".gvimrc" ".goaccessrc" ".gitignore_global" ".gitconfig" ".ghc/" ".Genymobile/" ".gem/" ".geeknote/" ".fasd.xWotBl" ".fasd.sobPjM" ".fasd" ".emacs.d/" ".elm/" ".el4rrc.rb" ".el4r/" ".editrc" ".DS_Store" ".dropbox/" ".doingrc" ".distlib/" ".dbshell" ".cups/" ".csirc" ".csi.history" ".cordova/" ".config/" ".coffee_history" ".clj_completions-long-list" ".clj_completions" ".clisp_history" ".CFUserTextEncoding" ".cache/" ".cabal/" ".bzr.log" ".bower/" ".boris_history" ".bashrc" ".bash_profile" ".bash_history-saved" ".bash_history" ".atom/" ".android/" ".aliases" ".agignore" ".ackrc" ".__glims_light" "#.notes#" "../" "./")
+
  ("/Users/anand/Dropbox/Notational Data/" (21649 48716 0 0) "Testing, TDD.txt" "stuff2.txt" "stuff.txt" "stuff-1.txt" "stuff (Jeff-Foxs-MacBook-Air's conflicted copy 2014-10-02).txt" "Start a Blog.txt" "Seth and More.txt" "Quotes and Stuff.txt" "Proclivities 1.txt" "on ebooks.txt" "Notes & Settings" "note for a day.txt" "New Note.txt" "New Note.md" "New Note.html" "mumblr and Kevin.txt" "Markdownify.txt" "markdown help.txt" "Live Templates for angular.js in WebStorm | pkozlowski.opensource.txt" "Lightroom Tips for Tom.txt" "js notes.txt" "Job Search.txt" "Intelligence Types.txt" "html5.png" "Haskell Notes.txt" "gradient.jpg" "Git Notes.txt" "Excruciatingly Useful Shortcuts.txt" "Emacs Notes.txt" "Cover Letter, etc.txt" "Contact Information.txt" "Clojure notes.txt" "Bodhichitta.txt" "Art  Stuff.txt" "A Near Future.txt" "> What I Was Doing.txt" ".DS_Store" "../" "./")
 
  ("/Users/anand/Dropbox/" (21638 35370 0 0) "Your Profile | LinkedIn.pdf" "Write/" "work/" "wizards_game.lisp" "webstorm-settings4.jar" "use.beam" "subscriptions0625013.opml" "subscriptions.opml" "squashed-dot.ghci" "spirituality+jyotish+etc/" "shiva_3.jpg" "Safari Bookmarks.html" "RIKJS Museum/" "research/" "rama.jpg" "quicklisp.lisp" "Public/" "programming-and-science/" "ppmx.lisp" "php-samples.zip" "Photos/" "pdfs/" "ovftool" "orgguide.pdf" "orgcard-cheatsheet.pdf" "oldprojects/" "notesy/" "notes.md" "notes-for-a-day.textile" "Notes/" "Notational Data/" "noop" "My Notes.enex" "my chart.pdf" "my chart-table.pdf" "modern-love.png" "misc/" "Mine2.itermcolors" "me.png" "life at the ashtram" "jeff-head.png" "jeff-head-small.png" "jeff-head-round.png" "jeeves.htm" "IntelliJ.keylayout" "IntelliJ.icns" "imac-dotfiles/" "imac-configs/" "Icon
 " "Git Notes.html" "foo.md" "foo.lisp" "emacs-todo.html" "dotfiles-mbp/" "dotfiles/" "cardstack.io-roadmap.png" "cardstack.io-newer.png" "Audio07-Page113Freeyourmind.mp3" "Audio06-Page106Instructionsformanifesting.mp3" "Audio05-Page86Release.mp3.mp3" "Audio04-Page59Re-version.mp3" "Audio03Feelinggood.mp3" "Audio02Playdream.mp3" "Audio01Makeachange.mp3" "Apps/" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
-
- ("/Users/anand/" (21641 2517 0 0) "VirtualBox VMs/" "tmp/" "Snapshots/" "Sites/" "Public/" "Projects/" "Pictures/" "News/" "Music/" "Movies/" "Library/" "leksah.lkshw" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".zshrc" ".zlogin" ".zcompdump" ".yjp/" ".xvimrc" ".WebStorm9/" ".w3m/" ".vimrc" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim/" ".vagrant.d/" ".Trash/" ".tcshrc" ".subversion/" ".ssh-save/" ".ssh/" ".sqlite_history" ".sonic-pi/" ".smex-items" ".slate" ".sh_history" ".screenrc" ".rvm/" ".rediscli_history" ".recentf~" ".recentf" ".rbenv/" ".rainbow_oauth" ".rainbow_config.json" ".python-eggs/" ".pryrc" ".pry_history" ".profile" ".plugman/" ".pip/" ".php_history" ".pentadactylrc" ".pentadactyl/" ".nrepl-history.eld" ".npmrc" ".npm/" ".notes" ".node_history" ".node-gyp/" ".newsrc.eld" ".newsrc" ".newsbeuter/" ".mix/" ".mit-scheme_history" ".mime.types" ".meteorsession" ".meteorite/" ".meteor/" ".Marked Preview.md" ".mailcap" ".m2/" ".local/" ".lldb/" ".lighttable/" ".lesshst" ".leksah-0.14/" ".lein/" ".ledgerrc" ".keysnail.js" ".jrnl_config" ".jrc" ".jline-reply.history" ".jline-clojure.main.history" ".jhistory" ".java_history" ".jarvis" ".ispell_english" ".irb_history" ".irb-history" ".ipython/" ".ionic/" ".inputrc" ".image.so" ".ihaskell/" ".ido.last~" ".ido.last" ".history" ".hgrc" ".hgignore_global" ".hex/" ".gvimrc" ".goaccessrc" ".gitignore_global" ".gitconfig" ".ghc/" ".Genymobile/" ".gem/" ".geeknote/" ".fasd.xWotBl" ".fasd.sobPjM" ".fasd" ".emacs.d/" ".elm/" ".el4rrc.rb" ".el4r/" ".editrc" ".DS_Store" ".dropbox/" ".doingrc" ".distlib/" ".dbshell" ".csirc" ".csi.history" ".cordova/" ".config/" ".coffee_history" ".clj_completions-long-list" ".clj_completions" ".clisp_history" ".CFUserTextEncoding" ".cache/" ".cabal/" ".bzr.log" ".bower/" ".boris_history" ".bashrc" ".bash_profile" ".bash_history-saved" ".bash_history" ".atom/" ".android/" ".aliases" ".agignore" ".ackrc" ".__glims_light" "#.notes#" "../" "./")
-
- ("/Users/anand/Projects/Notes/" (21646 30174 0 0) "us.md" "understanding-seth.pdf" "understanding-seth.org" "understanding-seth.md" "understanding-seth.html" "understanding-programming.org" "understanding-programming.html" "understanding-astrology.org" "understanding-astrology.html" "tea-smith.md" "style1.css" "strongbox.org" "strongbox.html" "steve-letter.md" "square-root.md" "save-it" "sails-info.md" "sacha.org" "resume-julie.md" "post1.org" "post1.html" "odd-duck.org" "odd-duck.md" "odd-duck.html" "notes-to-myself.md" "notes-to-myself.html" "notes-from-imac.md" "notes-from-imac.html" "new-notes.org" "new-notes.html" "mobile-inbox.org" "mobile-inbox.html" "michael-letter.md" "michael-letter.html" "lt-rainbow.css" "kevin-chat.txt" "jyotish-vargas.md" "jayaraj-notes.md" "jayaraj-notes.html" "jay-noddle.md" "index.html" "git-notes.md" "further-notes.md" "doctorjeff.org" "doctorjeff.html" "cyber-coders-reggie.md" "cover-letters.md" "basic-astrology.org" "basic-astrology.html" ".#understanding-seth.org" "#lt-rainbow.css#" "../" "./")
 
  ("/Users/anand/Projects/Elm/" (21538 6424 0 0) "hw/" "elm-examples/" "../" "./")
 
@@ -100,8 +108,6 @@
  ("/Users/anand/Projects/Clojure/address-book/" (21626 51568 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "old-projects.clj" ".nrepl-port" ".lein-repl-history" ".gitignore" "../" "./")
 
  ("/Users/anand/Projects/Clojure/" (21626 48392 0 0) "address-book/" "../" "./")
-
- ("/Users/anand/Projects/" (21630 9365 0 0) "yoApp3/" "yoApp2/" "yoApp/" "xiki/" "wiki/" "weather/" "tutorial.hs" "tutorial/" "tut0.svg" "templ-yoApp/" "stylistics/" "stuff.rkt" "starter-kit-save/" "starter-kit-1.4.0/" "sndYoApp/" "service-provider-factory-example.js" "scratch:moo2.hs" "scratch/" "people.txt" "pbcopy" "om-tut-save/" "om-tut/" "om-sweeper/" "Notes/" "NodeFun/" "ngbp1/" "new.html" "new-stuf/" "mywiki/" "myquotefork/" "my-stuff/" "my-markdown-preview.el" "mumblr01/" "mumblr.wiki-save/" "mumblr.wiki/" "misc-githubs/" "Meteor/" "logic-tutorial/" "lein-tutorial.md" "lein-profiles.md" "learning-lisp.el" "jeff-head-round.png" "ionic-weather/" "ionApp/" "foxjeff.com/" "foxjeff.bitbucket.org/" "foo2.md" "foo2.html" "foo.md" "foo.js" "foo.html" "ex.lst" "Ember-Too/" "Elm/" "dnd.md" "dash.sh" "dark-room.save" "CoffeeScript/" "Clojure/" "clj-tut.html" "chess.clj" "bb101repo/" "AngularFun/" "angular-seed/" "angular-express-seed/" "AngTest-2/" "AngTest/" "access.log" ".travis.yml" ".jshintrc" ".gitignore" ".gitattributes" ".editorconfig" ".DS_Store" ".bowerrc" "#my-markdown-preview.el#" "../" "./")
 
  ("/Users/anand/.emacs.d/my-stuff/" (21620 54708 0 0) "theme-park-mode.el" "structured-haskell-mode/" "smart-mode-line/" "my-setup.el" "moz.el" "moz-controller.el" "move-and.el" "iy-go-to-char.el" "emacs-moz-controller/" "dash-at-point.el~" "dash-at-point.el" "blink-colored-cursor.el~" "blink-colored-cursor.el" ".DS_Store" "../" "./")
 
