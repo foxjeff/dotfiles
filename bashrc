@@ -18,6 +18,7 @@ export CDPATH='.:~:~/Dropbox:/usr/local'
 #for glances:
 export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
 export EDITOR='emacsclient -nw'
+export GRADLE_OPTS="-Dorg.gradle.daemon=true"
 
 #for less -- fancy status line
 export LESS='-P%f (%i/%m) Line %lt/%L'

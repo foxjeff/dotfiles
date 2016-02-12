@@ -1,5 +1,13 @@
-"
+"era
 call pathogen#runtime_append_all_bundles()
+
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'YankRing.vim'
+Plug 'itchyny/lightline.vim'
+call plug#end()
 
 filetype on
 filetype plugin on
@@ -7,10 +15,13 @@ filetype indent on
 syntax enable
 
 set nocompatible
-set viminfo=!,'100,<50,s10,h,n~/Dropbox/dotfiles-mbp/.viminfo
+set noshowmode
+set viminfo=!,'100,<50,s10,h
 set vb "visual bell to get rid of annoying noises
 set cursorline
 set wildignore=*.0,*.class,#*,*~
+set wildignorecase
+set wildmenu
 set dir=/tmp
 "set backupdir=/tmp
 set laststatus=2
@@ -30,6 +41,8 @@ set hls
 "timeoutlen is how long pressing <ESC> delays; default is 1000ms
 set timeoutlen=300
 let g:rainbow_active = 1
+"lightline
+" let g:lightline={'colorscheme':'wombat',}
 
 "colorscheme stuff
 "let g:solarized_termcolors=256 "    |   16
@@ -40,9 +53,11 @@ let g:rainbow_active = 1
 "let g:solarized_italic    =   1       |   0
 "let g:solarized_style     ="dark" " |   light
 "let g:solarized_contrast="high" "or low
+
+set background=dark
 let g:liquidcarbon_high_contrast=5
 colorscheme liquidcarbon
-set background=dark
+nmap <F6> :hi Normal ctermbg=233<cr>
 "colorscheme solarized
 "colorscheme xoria256
 "
@@ -57,8 +72,12 @@ set tabstop=2
 set expandtab
 set pastetoggle=<F4>
 set hidden
-"makes v copy to clipboard
-set clipboard+=autoselect
+if has('nvim')
+    set clipboard+=unnamedplus
+    tnoremap <Esc> <C-\><C-n>
+else
+    set clipboard+=autoselect
+endif
 "ConqueTerm
 "let g:ConqueTerm_CWInsert = 1
 
@@ -99,7 +118,7 @@ imap <leader>ww <esc>:w<cr>
 "nmap <silent> \bb :call BufferList()<CR>
 "nmap <silent> \z <Plug>ToggleProject 
 
-let mapleader="\<space>"
+"let mapleader="\<space>"
 nmap <leader>pp "*p
 nmap <leader>PP "*P
 map <leader>w :bw<CR> "wipe buffer
@@ -113,12 +132,14 @@ map <silent> <leader>f :WinFullScreen<cr>
 
 nmap <F1> :bp<cr>
 nmap <F2> :bn<cr>
-nmap <F3> :set hlsearch!<cr>
-imap <F3> <esc>:set hlsearch!<cr>
+"nmap <F3> :set hlsearch!<cr>
+nmap <F3> :nohlsearch<cr>
+imap <F3> <esc>:nohlsearch<cr>
 "<F4> is pastetoggle
 nmap <F5> :BufExplorer<cr>
 "line numbering toggle from:
 "http://superuser.com/questions/339593/vim-toggle-number-with-relativenumber
+nnoremap <silent> <F8> :YRShow<CR>
 noremap <silent><F7> :exec &nu==&rnu? "se nu!" : "se rnu!"<CR>
 cnoremap <C-A> <HOME>
 imap  <Del>
@@ -160,7 +181,7 @@ runtime ftplugin/man.vim
 set statusline=%<%f\ %m\ %y\ %r\ \ %=%l\ of\ %L,%c%V\ %p%%
 
 "highlight stuff
-:hi Normal ctermbg=233
+" :hi Normal ctermbg=233
 "hi CursorLine cterm=none ctermbg=234
 "hi Visual ctermfg=black ctermbg=white
 "hi StatusLine  cterm=bold ctermfg=White ctermbg=235 "was 239
@@ -193,7 +214,7 @@ au InsertEnter * setlocal nocursorline
 au InsertLeave * setlocal cursorline
 au InsertLeave * set nopaste
 
-set background=dark
+" set background=dark
 "not sure about this: 
 "function! Ruby_eval_vsplit() range
   "let src = tempname()

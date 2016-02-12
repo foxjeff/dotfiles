@@ -12,13 +12,13 @@ rm ~/.zshrc
 rm ~/.editrc
 rm ~/.inputrc
 
-ln -s ~/Dropbox/dotfiles/bashrc ~/.bashrc 
-ln -s ~/Dropbox/dotfiles/bash_profile ~/.bash_profile
-ln -s ~/Dropbox/dotfiles/vimrc ~/.vimrc
-ln -s ~/Dropbox/dotfiles/gvimrc ~/.gvimrc
-ln -s ~/Dropbox/dotfiles/aliases ~/.aliases
-ln -s ~/Dropbox/dotfiles/xvimrc ~/.xvimrc
-ln -s ~/Dropbox/dotfiles/tcshrc ~/.tcshrc
-ln -s ~/Dropbox/dotfiles/zshrc ~/.zshrc
-ln -s ~/Dropbox/dotfiles/editrc ~/.editrc
-ln -s ~/Dropbox/dotfiles/inputrc ~/.inputrc
+ln -s ~/nodb/dotfiles/bashrc ~/.bashrc 
+ln -s ~/nodb/dotfiles/bash_profile ~/.bash_profile
+ln -s ~/nodb/dotfiles/vimrc ~/.vimrc
+ln -s ~/nodb/dotfiles/gvimrc ~/.gvimrc
+ln -s ~/nodb/dotfiles/aliases ~/.aliases
+ln -s ~/nodb/dotfiles/xvimrc ~/.xvimrc
+ln -s ~/nodb/dotfiles/tcshrc ~/.tcshrc
+ln -s ~/nodb/dotfiles/zshrc ~/.zshrc
+ln -s ~/nodb/dotfiles/editrc ~/.editrc
+ln -s ~/nodb/dotfiles/inputrc ~/.inputrc
